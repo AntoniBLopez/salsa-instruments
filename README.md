@@ -1,6 +1,6 @@
 # Salsa Instruments
 
-App web para apilar percusión y bajo de **salsa** y **mambo**: clave, congas, bongós, timbales, maracas, güiro, campana y bajo (tumbao anticipado). Controla BPM, swing, tap tempo, mute/solo y modo Practice (solo clave + conteo).
+App web para apilar percusión y bajo de **salsa** y **mambo**: clave, congas, bongós, timbales, maracas, güiro, campana y bajo (tumbao anticipado). Controla BPM, swing, Sync Tempo, mute/solo, Negras (click del pulso encima) y Mute all.
 
 ## Cómo correr
 
@@ -25,20 +25,20 @@ No hace falta ningún servicio de pago. El flujo es:
 
 | Instrumento | Fuente |
 |---|---|
-| Clave, congas, bongós | [FreePats World Percussion](https://github.com/freepats/world-percussion) (CC0) |
-| Maracas | [FreePats EggShaker](https://github.com/freepats/world-percussion) + bead synth (CC0) |
-| Bajo | [Free Wave Samples](https://freewavesamples.com/) Roland JV-2080 Pick Bass (royalty-free) |
-| Güiro | Ridge-scrape synth (`pnpm fetch:guiro`) |
+| Clave, conga (mute) | [FreePats World Percussion](https://github.com/freepats/world-percussion) (CC0) |
+| Congas (open/slap), bongós, timbales, maracas | [VCSL](https://github.com/sgossner/VCSL) — grabaciones reales (CC0) |
+| Güiro | [Freesound CC0](https://freesound.org/) — brunoboselli / SamuelGremaud |
 | Campana | [VCSL Cowbells](https://github.com/sgossner/VCSL) (CC0) |
-| Timbales, click | Síntesis propia (`pnpm generate:samples`) |
+| Bajo | [Free Wave Samples](https://freewavesamples.com/) Roland JV-2080 Pick Bass (royalty-free) |
+| Click | Síntesis propia (`pnpm generate:samples`) |
 
 Para regenerar:
 
 ```bash
-pnpm generate:samples   # base sintética
-pnpm fetch:freepats     # clave/congas/bongós CC0
-pnpm fetch:maracas      # maracas (EggShaker beads CC0)
-pnpm fetch:guiro        # güiro (ridge scrapes)
+pnpm generate:samples   # click + fallbacks sintéticos
+pnpm fetch:freepats     # clave + conga mute (CC0)
+pnpm fetch:vcsl         # congas/bongós/timbales/maracas reales (CC0)
+pnpm fetch:guiro        # güiro (raspados reales CC0)
 pnpm fetch:campana      # campana metálica (TING / TAK)
 pnpm fetch:bajo         # bajo eléctrico (Free Wave Samples)
 ```
@@ -52,11 +52,12 @@ Las ilustraciones en `public/images/` son SVG originales de este proyecto.
 | Control | Qué hace |
 |---|---|
 | Play / Pausa | Arranca o para el Transport |
-| BPM | 80–200; rapidez del conteo |
-| Tap Tempo | Detecta BPM con 2–4 toques |
+| BPM | 80–260; rapidez del conteo |
+| Sync Tempo | Detecta BPM con 2–4 toques |
 | Swing | Swing ligero en corcheas |
-| Clave 3-2 / 2-3 | Cambia el patrón de clave |
-| Practice | Solo clave + click de conteo |
+| Clave → Son / Rumba | En la tarjeta Clave: elige 2-3 o 3-2 (mueve también cáscara, mambo…) |
+| Negras | Añade el click de las negras (1–8) encima del groove |
+| Mute all | Silencia todos los instrumentos (Negras sigue si está ON) |
 | Añadir | Capa el instrumento en el groove |
 | Mute | Silencia sin quitarlo de la capa |
 | Solo | Deja sonar solo ese instrumento |

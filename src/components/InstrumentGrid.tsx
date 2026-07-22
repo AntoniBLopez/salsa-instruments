@@ -8,8 +8,8 @@ export function InstrumentGrid() {
       <h2 className={styles.heading}>Instrumentos y ritmos</h2>
       <p className={styles.hint}>
         Elige el ritmo de cada instrumento; al seleccionarlo entra en la capa.
-        Activa o silencia con Capa, Mute y Solo. La dirección de clave (2-3 /
-        3-2) del transport afecta a los ritmos que dependen de ella.
+        En la Clave, abre Son o Rumba para elegir 2-3 / 3-2 (también mueve
+        cáscara, mambo y otros ritmos clave-aware).
       </p>
       <div className={styles.grid}>
         {INSTRUMENTS.map((instrument) => (

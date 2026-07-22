@@ -7,12 +7,12 @@ export function TransportBar() {
   const beat = useSessionStore((s) => s.beat)
   const bpm = useSessionStore((s) => s.bpm)
   const swing = useSessionStore((s) => s.swing)
-  const claveDirection = useSessionStore((s) => s.claveDirection)
-  const practiceMode = useSessionStore((s) => s.practiceMode)
+  const negrasMode = useSessionStore((s) => s.negrasMode)
+  const muteAll = useSessionStore((s) => s.muteAll)
   const setBpm = useSessionStore((s) => s.setBpm)
   const setSwing = useSessionStore((s) => s.setSwing)
-  const setClaveDirection = useSessionStore((s) => s.setClaveDirection)
-  const setPracticeMode = useSessionStore((s) => s.setPracticeMode)
+  const setNegrasMode = useSessionStore((s) => s.setNegrasMode)
+  const setMuteAll = useSessionStore((s) => s.setMuteAll)
   const tapTempo = useSessionStore((s) => s.tapTempo)
 
   return (
@@ -73,7 +73,7 @@ export function TransportBar() {
             id="bpm"
             type="range"
             min={80}
-            max={200}
+            max={260}
             value={bpm}
             onChange={(e) => setBpm(Number(e.target.value))}
           />
@@ -95,31 +95,23 @@ export function TransportBar() {
 
         <div className={styles.chipRow}>
           <button type="button" className={styles.chip} onClick={tapTempo}>
-            Tap Tempo
+            Sync Tempo
           </button>
           <button
             type="button"
-            className={`${styles.chip} ${claveDirection === '2-3' ? styles.on : ''}`}
-            onClick={() => setClaveDirection('2-3')}
-            title="Golpes en 2, 3, 5, 6½, 8"
+            className={`${styles.chip} ${negrasMode ? styles.on : ''}`}
+            onClick={() => setNegrasMode(!negrasMode)}
+            title="Añade el click de las negras (1–8) encima del groove"
           >
-            Clave 2-3
+            {negrasMode ? 'Negras ON' : 'Negras'}
           </button>
           <button
             type="button"
-            className={`${styles.chip} ${claveDirection === '3-2' ? styles.on : ''}`}
-            onClick={() => setClaveDirection('3-2')}
-            title="Golpes en 1, 2½, 4, 6, 7"
+            className={`${styles.chip} ${muteAll ? styles.on : ''}`}
+            onClick={() => setMuteAll(!muteAll)}
+            title="Silencia todos los instrumentos (el click de Negras sigue si está ON)"
           >
-            Clave 3-2
-          </button>
-          <button
-            type="button"
-            className={`${styles.chip} ${practiceMode ? styles.on : ''}`}
-            onClick={() => setPracticeMode(!practiceMode)}
-            title="Solo clave + conteo. Se apaga al añadir otros instrumentos."
-          >
-            {practiceMode ? 'Practice ON' : 'Practice'}
+            {muteAll ? 'Mute all ON' : 'Mute all'}
           </button>
         </div>
       </div>

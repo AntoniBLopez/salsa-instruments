@@ -19,14 +19,9 @@ const base =
 const downloads = [
   [`${base}/Claves/01.flac`, 'clave-open.wav'],
   [`${base}/Claves/02.flac`, 'clave-mute.wav'],
-  [`${base}/Conga/v2_01_01.flac`, 'conga-open.wav'],
   [`${base}/MutedConga/High_v2_01_01.flac`, 'conga-mute.wav'],
-  [`${base}/HighConga/v2_01_01.flac`, 'conga-slap.wav'],
-  [`${base}/Bongos/1_01.flac`, 'bongo-open.wav'],
-  [`${base}/Bongos/1_02.flac`, 'bongo-mute.wav'],
-  [`${base}/Bongos/1_03.flac`, 'bongo-slap.wav'],
-  // Maracas: `pnpm fetch:maracas` (EggShaker beads — FreePats Maracas/ sound scrape-like)
-  // Güiro mute: keep synthetic scrape from `pnpm generate:samples`
+  // Everything else (conga open/slap, bongós, timbales, güiro, maracas)
+  // comes from real VCSL recordings: `pnpm fetch:vcsl`
 ]
 
 for (const [url, outName] of downloads) {

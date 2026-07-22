@@ -4,6 +4,9 @@ import {
   INSTRUMENTS,
   defaultRhythmId,
   getRhythm,
+  hitKind,
+  hitPitch,
+  isRest,
   resolvePattern,
   type Hit,
   type HitKind,
@@ -149,34 +152,55 @@ export class AudioEngine {
     buffer: Tone.ToneAudioBuffer,
     output: Tone.ToneAudioNode,
     time: number,
+    playbackRate = 1,
   ) {
     if (!buffer.loaded) return
     const src = new Tone.ToneBufferSource({
       url: buffer,
       fadeIn: 0.002,
       fadeOut: 0.04,
+      playbackRate,
     }).connect(output)
     src.onended = () => src.dispose()
     src.start(time)
   }
 
-  private triggerHit(id: string, hit: HitKind, time: number) {
+  private triggerHit(
+    id: string,
+    hit: Exclude<Hit, 0>,
+    time: number,
+    step: number,
+  ) {
     if (!isInstrumentAudible(id, useSessionStore.getState())) return
     const voice = this.voices.get(id)
     if (!voice) return
 
+    const kind = hitKind(hit)
+    const pitch = hitPitch(hit)
+    const pitched = typeof hit === 'object' && hit.pitch !== undefined
+    // Prefer the articulation buffer (open/mute/slap). Bajo mute/slap
+    // samples are pre-pitched (+7 / +12); compensate so `pitch` stays absolute.
     const buffer =
-      voice.buffers[hit] ?? voice.buffers.open ?? voice.buffers.mute
+      voice.buffers[kind] ?? voice.buffers.open ?? voice.buffers.mute
     if (!buffer) {
-      console.warn('[AudioEngine] missing buffer', id, hit)
+      console.warn('[AudioEngine] missing buffer', id, kind)
       return
     }
 
-    this.playBuffer(buffer, voice.output, time)
+    const bakedOffset =
+      pitched && id === 'bajo'
+        ? kind === 'mute'
+          ? 7
+          : kind === 'slap'
+            ? 12
+            : 0
+        : 0
+    const rate = pitched ? 2 ** ((pitch - bakedOffset) / 12) : 1
+    this.playBuffer(buffer, voice.output, time, rate)
 
     Tone.getDraw().schedule(() => {
       if (!useSessionStore.getState().isPlaying) return
-      useSessionStore.getState().pulse(id)
+      useSessionStore.getState().pulse(id, step)
     }, time)
   }
 
@@ -199,21 +223,21 @@ export class AudioEngine {
       const step = this.step
       this.step = (step + 1) % CYCLE_STEPS
 
-      // Visual 1–8 locked to the same counter as the patterns
-      if (step % 4 === 0) {
-        const beat = Math.floor(step / 4) + 1
-        Tone.getDraw().schedule(() => {
-          if (!useSessionStore.getState().isPlaying) return
-          useSessionStore.getState().setBeat(beat)
-        }, time)
-      }
+      // Visual counters locked to the same counter as the patterns
+      Tone.getDraw().schedule(() => {
+        if (!useSessionStore.getState().isPlaying) return
+        useSessionStore.getState().setStep(step)
+        if (step % 4 === 0) {
+          useSessionStore.getState().setBeat(Math.floor(step / 4) + 1)
+        }
+      }, time)
 
       for (const inst of INSTRUMENTS) {
         const pattern = this.patternCache.get(inst.id)
         if (!pattern) continue
         const hit = pattern[step]
-        if (hit !== 0) {
-          this.triggerHit(inst.id, hit, time)
+        if (!isRest(hit)) {
+          this.triggerHit(inst.id, hit, time, step)
         }
       }
     }, '16n')
@@ -222,8 +246,8 @@ export class AudioEngine {
   private buildClickLoop() {
     this.clickLoop?.dispose()
     this.clickLoop = new Tone.Loop((time) => {
-      const { practiceMode, isPlaying } = useSessionStore.getState()
-      if (!practiceMode || !isPlaying || !this.clickBuffer?.loaded) return
+      const { negrasMode, isPlaying } = useSessionStore.getState()
+      if (!negrasMode || !isPlaying || !this.clickBuffer?.loaded) return
       if (!this.master) return
       this.playBuffer(this.clickBuffer, this.master, time)
     }, '4n')
@@ -249,6 +273,7 @@ export class AudioEngine {
   private resetCounters() {
     this.step = 0
     useSessionStore.getState().setBeat(1)
+    useSessionStore.getState().setStep(0)
   }
 
   async start() {

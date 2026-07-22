@@ -1,24 +1,108 @@
 /**
- * Builds realistic güiro one-shots: stick scraped across wooden ridges.
- * (FreePats has no güiro; old synth was plain AM noise.)
+ * Builds güiro one-shots from real CC0 Freesound recordings
+ * (HQ previews → mono WAV → carved scrape / tick).
  *
- * open  = long salsa scrape  ("raaaas")
- * mute  = short tick scrape  ("tic")
+ * open  = longer multi-ridge scrape ("raaas")
+ * mute  = short scrape / tick ("ca")
+ *
+ * Sources (Creative Commons 0):
+ * - brunoboselli "Guiro" https://freesound.org/people/brunoboselli/sounds/472469/
+ * - SamuelGremaud "GUIRO" (bamboo) https://freesound.org/people/SamuelGremaud/sounds/517640/
  */
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
+import { mkdirSync, writeFileSync, rmSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import ffmpegPath from 'ffmpeg-static'
 
-const SR = 44100
-const outDir = join(process.cwd(), 'public/samples')
+const root = process.cwd()
+const tmp = join(root, '.tmp-guiro')
+const outDir = join(root, 'public/samples')
+mkdirSync(tmp, { recursive: true })
 mkdirSync(outDir, { recursive: true })
 
-function mulberry32(a) {
-  return function rand() {
-    let t = (a += 0x6d2b79f5)
-    t = Math.imul(t ^ (t >>> 15), t | 1)
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+const sources = {
+  long: {
+    url: 'https://cdn.freesound.org/previews/472/472469_300738-hq.mp3',
+    file: 'long.mp3',
+    // Densest multi-ridge scrape in the take (~18–20 crestas)
+    start: 4.24,
+    maxMs: 380,
+    fadeMs: 80,
+    peak: 0.9,
+    hp: 260,
+    out: 'guiro-open.wav',
+  },
+  short: {
+    url: 'https://cdn.freesound.org/previews/517/517640_8031303-hq.mp3',
+    file: 'short.mp3',
+    // Clean bamboo tick/scrape
+    start: 2.88,
+    maxMs: 120,
+    fadeMs: 30,
+    peak: 0.88,
+    hp: 300,
+    out: 'guiro-mute.wav',
+  },
+}
+
+function readWav(buf) {
+  const view = new DataView(buf.buffer, buf.byteOffset, buf.byteLength)
+  if (buf.toString('ascii', 0, 4) !== 'RIFF') throw new Error('not RIFF')
+  let o = 12
+  let rate = 44100
+  let bits = 16
+  let ch = 1
+  let dataOff = 0
+  let dataSize = 0
+  while (o + 8 <= buf.length) {
+    const id = buf.toString('ascii', o, o + 4)
+    const size = view.getUint32(o + 4, true)
+    if (id === 'fmt ') {
+      ch = view.getUint16(o + 10, true)
+      rate = view.getUint32(o + 12, true)
+      bits = view.getUint16(o + 22, true)
+    } else if (id === 'data') {
+      dataOff = o + 8
+      dataSize = size
+      break
+    }
+    o += 8 + size + (size % 2)
   }
+  if (bits !== 16) throw new Error(`need 16-bit, got ${bits}`)
+  const n = Math.floor(dataSize / (2 * ch))
+  const samples = new Array(n)
+  for (let i = 0; i < n; i++) {
+    let s = 0
+    for (let c = 0; c < ch; c++) {
+      s += view.getInt16(dataOff + (i * ch + c) * 2, true) / 32768
+    }
+    samples[i] = s / ch
+  }
+  return { rate, samples }
+}
+
+function highpass(samples, cutoff, rate = 44100) {
+  const rc = 1 / (2 * Math.PI * cutoff)
+  const dt = 1 / rate
+  const a = rc / (rc + dt)
+  let y = 0
+  let prev = 0
+  return samples.map((x) => {
+    y = a * (y + x - prev)
+    prev = x
+    return y
+  })
+}
+
+/** Mild band emphasis so ridge clicks cut through without hiss */
+function shelfBoost(samples, amount = 0.35) {
+  // One-pole differentiator-ish brightener, then mix back
+  let prev = 0
+  return samples.map((x) => {
+    const d = x - prev
+    prev = x
+    return x + d * amount
+  })
 }
 
 function normalize(samples, peak = 0.9) {
@@ -28,134 +112,18 @@ function normalize(samples, peak = 0.9) {
   return samples.map((s) => s * g)
 }
 
-function highpass(samples, cutoff, passes = 1) {
-  let out = samples
-  for (let p = 0; p < passes; p++) {
-    const rc = 1 / (2 * Math.PI * cutoff)
-    const dt = 1 / SR
-    const a = rc / (rc + dt)
-    let y = 0
-    let prev = 0
-    const next = new Array(out.length)
-    for (let i = 0; i < out.length; i++) {
-      const x = out[i]
-      y = a * (y + x - prev)
-      prev = x
-      next[i] = y
-    }
-    out = next
+function fadeEdges(samples, fadeInMs, fadeOutMs, rate = 44100) {
+  const out = samples.slice()
+  const fi = Math.floor((rate * fadeInMs) / 1000)
+  const fo = Math.floor((rate * fadeOutMs) / 1000)
+  for (let i = 0; i < fi && i < out.length; i++) out[i] *= i / fi
+  for (let i = 0; i < fo && i < out.length; i++) {
+    out[out.length - 1 - i] *= i / fo
   }
   return out
 }
 
-function bandpassNoise(rand, n, center, q) {
-  // Cheap resonant-ish noise via one-pole SVF-ish state
-  const out = new Float64Array(n)
-  const f = (2 * Math.PI * center) / SR
-  let lp = 0
-  let bp = 0
-  for (let i = 0; i < n; i++) {
-    const x = rand() * 2 - 1
-    lp += f * bp
-    const hp = x - lp - (1 / q) * bp
-    bp += f * hp
-    out[i] = bp
-  }
-  return out
-}
-
-/**
- * Güiro scrape: discrete ridge ticks + woody rasp noise.
- * Rate eases in/out so it feels like a stick stroke, not a metronome.
- */
-function guiroScrape({
-  dur = 0.22,
-  ridges = 10,
-  seed = 1,
-  brightness = 1,
-  woodFreq = 1450,
-}) {
-  const rand = mulberry32(seed)
-  const n = Math.floor(SR * dur)
-  const out = new Float64Array(n)
-
-  // Precompute rasp bed (band-limited noise)
-  const rasp = bandpassNoise(rand, n, 2200 * brightness, 1.8)
-  const rasp2 = bandpassNoise(rand, n, 3800 * brightness, 2.4)
-
-  for (let r = 0; r < ridges; r++) {
-    // Nearly even ridge spacing with mild accel (stick stroke), plus tiny jitter
-    const u = (r + 0.5) / ridges
-    const accel = u ** 0.85 // slight front-loading without merging peaks
-    const jitter = (rand() - 0.5) * 0.004
-    const t0 = Math.max(
-      0,
-      Math.min(dur - 0.012, 0.01 + accel * (dur - 0.03) + jitter),
-    )
-    const pos = Math.floor(t0 * SR)
-
-    const ridgeAmp = 0.5 + 0.5 * Math.sin(Math.PI * u) // louder mid-stroke
-    // Each ridge: sharp stick click (dominant) + short rasp + wood ping
-    const clickN = Math.floor(SR * (0.0022 + rand() * 0.001))
-    for (let i = 0; i < clickN; i++) {
-      if (pos + i >= n) break
-      const e = 1 - i / clickN
-      out[pos + i] += ridgeAmp * 1.55 * e * e * (rand() * 2 - 1) * brightness
-    }
-
-    const grainN = Math.floor(SR * (0.008 + rand() * 0.004))
-    for (let i = 0; i < grainN; i++) {
-      if (pos + i >= n) break
-      const t = i / SR
-      const e = Math.exp(-t * 260)
-      const idx = pos + i
-      out[idx] +=
-        ridgeAmp *
-        e *
-        (rasp[idx] * 0.55 + rasp2[idx] * 0.4) *
-        (0.7 + 0.3 * rand())
-    }
-
-    // Short wooden body ping under each ridge
-    const pingN = Math.floor(SR * 0.014)
-    const freq = woodFreq * (0.92 + rand() * 0.16)
-    for (let i = 0; i < pingN; i++) {
-      if (pos + i >= n) break
-      const t = i / SR
-      const e = Math.exp(-t * 260)
-      out[pos + i] +=
-        ridgeAmp * 0.28 * e * Math.sin(2 * Math.PI * freq * t)
-    }
-  }
-
-  // Overall stroke envelope — quick in, natural out
-  const atk = Math.floor(SR * 0.008)
-  for (let i = 0; i < n; i++) {
-    let env = 1
-    if (i < atk) env = (i / atk) ** 0.6
-    else {
-      const u = (i - atk) / (n - atk)
-      env = (1 - u) ** 1.15 * (0.55 + 0.45 * Math.sin(Math.PI * Math.min(1, u * 1.2)))
-    }
-    out[i] *= env
-  }
-
-  // Fade tail cleanly
-  const fade = Math.floor(SR * 0.03)
-  for (let i = 0; i < fade; i++) {
-    out[n - 1 - i] *= i / Math.max(1, fade)
-  }
-
-  let samples = highpass(Array.from(out), 500, 1)
-  // Mild pre-emphasis for stick-on-ridge bite
-  const bright = [samples[0]]
-  for (let i = 1; i < samples.length; i++) {
-    bright.push(samples[i] + 0.28 * (samples[i] - samples[i - 1]))
-  }
-  return normalize(bright, 0.92)
-}
-
-function writeWav16(path, samples) {
+function writeWav16(path, samples, rate = 44100) {
   const dataSize = samples.length * 2
   const buf = Buffer.alloc(44 + dataSize)
   buf.write('RIFF', 0)
@@ -165,8 +133,8 @@ function writeWav16(path, samples) {
   buf.writeUInt32LE(16, 16)
   buf.writeUInt16LE(1, 20)
   buf.writeUInt16LE(1, 22)
-  buf.writeUInt32LE(SR, 24)
-  buf.writeUInt32LE(SR * 2, 28)
+  buf.writeUInt32LE(rate, 24)
+  buf.writeUInt32LE(rate * 2, 28)
   buf.writeUInt16LE(2, 32)
   buf.writeUInt16LE(16, 34)
   buf.write('data', 36)
@@ -178,25 +146,44 @@ function writeWav16(path, samples) {
   writeFileSync(path, buf)
 }
 
-const openHit = guiroScrape({
-  dur: 0.26,
-  ridges: 12,
-  seed: 42,
-  brightness: 1.1,
-  woodFreq: 1380,
-})
-const muteHit = guiroScrape({
-  dur: 0.085,
-  ridges: 3,
-  seed: 99,
-  brightness: 1.2,
-  woodFreq: 1650,
-})
+/** Snap start to nearest energy onset near the requested time */
+function snapToOnset(samples, rate, approxSec, lookBack = 0.04, lookAhead = 0.08) {
+  const center = Math.floor(approxSec * rate)
+  const a = Math.max(0, center - Math.floor(lookBack * rate))
+  const b = Math.min(samples.length - 1, center + Math.floor(lookAhead * rate))
+  let peak = 0
+  for (let i = a; i <= b; i++) peak = Math.max(peak, Math.abs(samples[i]))
+  const thr = peak * 0.18
+  for (let i = a; i <= b; i++) {
+    if (Math.abs(samples[i]) >= thr) return Math.max(0, i - 24)
+  }
+  return a
+}
 
-writeWav16(join(outDir, 'guiro-open.wav'), openHit)
-writeWav16(join(outDir, 'guiro-mute.wav'), muteHit)
+for (const src of Object.values(sources)) {
+  process.stdout.write(`fetch ${src.out}… `)
+  const mp3 = join(tmp, src.file)
+  const wav = join(tmp, src.file.replace('.mp3', '.wav'))
+  const res = await fetch(src.url)
+  if (!res.ok) throw new Error(`download failed ${src.url} (${res.status})`)
+  writeFileSync(mp3, Buffer.from(await res.arrayBuffer()))
+  execFileSync(
+    ffmpegPath,
+    ['-y', '-loglevel', 'error', '-i', mp3, '-ac', '1', '-ar', '44100', wav],
+  )
 
-console.log(
-  'Güiro updated: long scrape (open) + short tick (mute).',
-  `open=${openHit.length} mute=${muteHit.length} samples`,
-)
+  let { samples } = readWav(readFileSync(wav))
+  const rate = 44100
+  const start = snapToOnset(samples, rate, src.start)
+  const len = Math.floor((rate * src.maxMs) / 1000)
+  samples = samples.slice(start, start + len)
+  samples = highpass(samples, src.hp, rate)
+  samples = shelfBoost(samples, 0.28)
+  samples = fadeEdges(samples, 4, src.fadeMs, rate)
+  samples = normalize(samples, src.peak)
+  writeWav16(join(outDir, src.out), samples, rate)
+  console.log(`ok (${(samples.length / rate).toFixed(3)}s from t=${(start / rate).toFixed(2)})`)
+}
+
+rmSync(tmp, { recursive: true, force: true })
+console.log('Güiro updated from Freesound CC0 recordings.')

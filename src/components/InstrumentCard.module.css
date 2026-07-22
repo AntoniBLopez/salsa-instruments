@@ -62,6 +62,26 @@
   opacity: 1;
 }
 
+.mediaActions {
+  position: absolute;
+  top: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 62%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cream) 16%, transparent);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--ink) 35%, transparent);
+  white-space: nowrap;
+}
+
 .mediaBadge {
   position: absolute;
   left: 0.75rem;
@@ -131,6 +151,62 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+
+.groupChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.groupChipOpen:not(.rhythmChipOn) {
+  border-color: color-mix(in srgb, var(--amber) 55%, transparent);
+  background: color-mix(in srgb, var(--amber) 12%, transparent);
+}
+
+.groupCaret {
+  font-size: 0.65rem;
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.variationPanel {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0.55rem 0.65rem 0.6rem;
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--cream) 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--amber) 22%, transparent);
+  animation: varPanelIn 160ms ease;
+}
+
+@keyframes varPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.variationLabel {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: color-mix(in srgb, var(--amber) 75%, var(--muted));
+  font-weight: 700;
+}
+
+.variationChip {
+  font-size: 0.74rem;
+  padding: 0.36rem 0.65rem;
+}
+
+.groupTag {
+  color: color-mix(in srgb, var(--amber) 65%, var(--muted));
+  font-weight: 650;
 }
 
 .rhythmChip {
@@ -204,23 +280,61 @@
   font-weight: 500;
 }
 
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-  padding-top: 0.15rem;
-  border-top: 1px solid color-mix(in srgb, var(--cream) 10%, transparent);
+.hitCounts {
+  display: grid;
+  gap: 0.35rem;
 }
 
-.switchRow {
-  display: inline-flex;
+.hitCountsLabel {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.hitCountsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
   align-items: center;
-  gap: 0.55rem;
-  margin-right: auto;
-  color: var(--cream);
+}
+
+.hitCount {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
   font-size: 0.82rem;
   font-weight: 650;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--cream) 7%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cream) 14%, transparent);
+  transition:
+    transform 100ms ease,
+    background 100ms ease,
+    color 100ms ease,
+    border-color 100ms ease,
+    box-shadow 100ms ease;
+}
+
+.hit_mute {
+  border-color: color-mix(in srgb, var(--teal) 35%, transparent);
+}
+
+.hit_slap {
+  border-color: color-mix(in srgb, var(--coral) 40%, transparent);
+}
+
+.hitCountLit {
+  color: var(--ink);
+  background: var(--amber);
+  border-color: var(--amber);
+  transform: scale(1.12);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber) 28%, transparent);
 }
 
 .switch {
@@ -259,6 +373,12 @@
 
 .switchOn .switchKnob {
   transform: translateX(1.15rem);
+}
+
+.mediaActions .btn {
+  padding: 0.32rem 0.65rem;
+  font-size: 0.72rem;
+  background: color-mix(in srgb, var(--cream) 10%, transparent);
 }
 
 .btn {
