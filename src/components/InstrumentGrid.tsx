@@ -5,10 +5,11 @@ import styles from './InstrumentGrid.module.css'
 export function InstrumentGrid() {
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>Instrumentos</h2>
+      <h2 className={styles.heading}>Instrumentos y ritmos</h2>
       <p className={styles.hint}>
-        Añade capas, deja un Solo o silencia con Mute. En modo Practice solo suena la
-        clave y el conteo.
+        Elige el ritmo de cada instrumento; al seleccionarlo entra en la capa.
+        Activa o silencia con Capa, Mute y Solo. La dirección de clave (2-3 /
+        3-2) del transport afecta a los ritmos que dependen de ella.
       </p>
       <div className={styles.grid}>
         {INSTRUMENTS.map((instrument) => (

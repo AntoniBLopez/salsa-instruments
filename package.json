@@ -9,7 +9,11 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "generate:samples": "node scripts/generate-samples.mjs --only-missing",
-    "fetch:freepats": "node scripts/fetch-freepats.mjs"
+    "fetch:freepats": "node scripts/fetch-freepats.mjs",
+    "fetch:maracas": "node scripts/fetch-maracas.mjs",
+    "fetch:guiro": "node scripts/fetch-guiro.mjs",
+    "fetch:campana": "node scripts/fetch-campana.mjs",
+    "fetch:bajo": "node scripts/fetch-bajo.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",

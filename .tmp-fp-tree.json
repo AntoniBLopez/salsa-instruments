@@ -1,0 +1,2064 @@
+{
+  "sha": "e54eb2912a0d6d4444ab205d52f778e27da0fc96",
+  "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/e54eb2912a0d6d4444ab205d52f778e27da0fc96",
+  "tree": [
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+      "size": 7048,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0e259d42c996742e9e3cba14c677129b2c1b6311"
+    },
+    {
+      "path": "README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eba794493fefed2e2aefff0329ee7f84900599ed",
+      "size": 1795,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/eba794493fefed2e2aefff0329ee7f84900599ed"
+    },
+    {
+      "path": "WorldPercussion 20200905.sfz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d281c7ad707d18cb7019603a120050154d8533e1",
+      "size": 17599,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d281c7ad707d18cb7019603a120050154d8533e1"
+    },
+    {
+      "path": "picture.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46b18d29aa54a0c0a69ed7601f62358cdd2ac7e7",
+      "size": 126673,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/46b18d29aa54a0c0a69ed7601f62358cdd2ac7e7"
+    },
+    {
+      "path": "samples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "435033aebc723b05d4041572a934410c406a9d92",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/435033aebc723b05d4041572a934410c406a9d92"
+    },
+    {
+      "path": "samples/Bongos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b231611c40d52653b77954c180160b9d77e19b26",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/b231611c40d52653b77954c180160b9d77e19b26"
+    },
+    {
+      "path": "samples/Bongos/1_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c1ab4447fc17faa86409575174bf33a9020563d",
+      "size": 49247,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1c1ab4447fc17faa86409575174bf33a9020563d"
+    },
+    {
+      "path": "samples/Bongos/1_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4efa99cc820da318532da23eb2fa73c57a896311",
+      "size": 41918,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4efa99cc820da318532da23eb2fa73c57a896311"
+    },
+    {
+      "path": "samples/Bongos/1_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0a2678422b6acf7f5527aec2d733fd37f16bbed",
+      "size": 41305,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e0a2678422b6acf7f5527aec2d733fd37f16bbed"
+    },
+    {
+      "path": "samples/Bongos/1_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7711cf70fa6db3ef74907aa6f8af6b54aed8afa4",
+      "size": 43172,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7711cf70fa6db3ef74907aa6f8af6b54aed8afa4"
+    },
+    {
+      "path": "samples/Bongos/1_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3915f4c86a3d0cdcac8991c5f07898165a6b899f",
+      "size": 44041,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3915f4c86a3d0cdcac8991c5f07898165a6b899f"
+    },
+    {
+      "path": "samples/Bongos/1_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4d941291d8bf17a21ba4ec8d26d2e67ee65a89c",
+      "size": 37616,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a4d941291d8bf17a21ba4ec8d26d2e67ee65a89c"
+    },
+    {
+      "path": "samples/Bongos/1_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c8cd7962d608f212a05674fee8c1cf7c739d56",
+      "size": 36099,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/04c8cd7962d608f212a05674fee8c1cf7c739d56"
+    },
+    {
+      "path": "samples/Bongos/1_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f901ce21a88322db248baf213f407ceaf6261710",
+      "size": 40339,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/f901ce21a88322db248baf213f407ceaf6261710"
+    },
+    {
+      "path": "samples/Bongos/1_09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a978ece9d8f877a1d628f653774d63adb625129",
+      "size": 36187,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3a978ece9d8f877a1d628f653774d63adb625129"
+    },
+    {
+      "path": "samples/Bongos/1_10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4d49c5620575b7f70d5031ec1aeff8c98dd1a6",
+      "size": 33146,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fd4d49c5620575b7f70d5031ec1aeff8c98dd1a6"
+    },
+    {
+      "path": "samples/Bongos/1_11.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "904a6d23ab10e0cffcfc2085cb06e0e1fe290e47",
+      "size": 32027,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/904a6d23ab10e0cffcfc2085cb06e0e1fe290e47"
+    },
+    {
+      "path": "samples/Bongos/1_12.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f26e469f39f515b7518aa939906b838e8eae495",
+      "size": 32391,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2f26e469f39f515b7518aa939906b838e8eae495"
+    },
+    {
+      "path": "samples/Bongos/1_13.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd33b987b5e5fc33bdc840c346df7ca64cfb577e",
+      "size": 37158,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/bd33b987b5e5fc33bdc840c346df7ca64cfb577e"
+    },
+    {
+      "path": "samples/Bongos/2_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29734764cb51998bc6d6802cd412b7b852cbcbb9",
+      "size": 36418,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/29734764cb51998bc6d6802cd412b7b852cbcbb9"
+    },
+    {
+      "path": "samples/Bongos/2_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45e25e8f2318adc9ad04bb509607ef5df43576ad",
+      "size": 43890,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/45e25e8f2318adc9ad04bb509607ef5df43576ad"
+    },
+    {
+      "path": "samples/Bongos/2_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d14d0d7eb8937dc8acc4462dbe78a39600c4707f",
+      "size": 45509,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d14d0d7eb8937dc8acc4462dbe78a39600c4707f"
+    },
+    {
+      "path": "samples/Bongos/2_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da2336862a45bb132dabf8d8bcc68469c7654a37",
+      "size": 43044,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/da2336862a45bb132dabf8d8bcc68469c7654a37"
+    },
+    {
+      "path": "samples/Bongos/2_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3b0760a285a6fe53f449cc901f9a60985047e08",
+      "size": 42022,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a3b0760a285a6fe53f449cc901f9a60985047e08"
+    },
+    {
+      "path": "samples/Bongos/2_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e22f1f6b3a9859bb97f562c0c275aafee6108dd",
+      "size": 37909,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5e22f1f6b3a9859bb97f562c0c275aafee6108dd"
+    },
+    {
+      "path": "samples/Bongos/2_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4c0c07edbca77079b731a9aa357f6080bb3c54e",
+      "size": 38498,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d4c0c07edbca77079b731a9aa357f6080bb3c54e"
+    },
+    {
+      "path": "samples/Bongos/2_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2074cf65422f33806af12299fa5c981a24e6107c",
+      "size": 30861,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2074cf65422f33806af12299fa5c981a24e6107c"
+    },
+    {
+      "path": "samples/Bongos/2_09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "041c4ba1ae8177c9807cac729926a33f16fd499b",
+      "size": 38698,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/041c4ba1ae8177c9807cac729926a33f16fd499b"
+    },
+    {
+      "path": "samples/Bongos/2_10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f68641358fc2910385202c28179924a88f63cc68",
+      "size": 45697,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/f68641358fc2910385202c28179924a88f63cc68"
+    },
+    {
+      "path": "samples/Bongos/2_11.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c41f92ef939699682c018e3a18333b7b21a26eb",
+      "size": 46528,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/6c41f92ef939699682c018e3a18333b7b21a26eb"
+    },
+    {
+      "path": "samples/Bongos/2_12.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe58375c7f77d314f711be3e65692d37afaad44f",
+      "size": 45744,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fe58375c7f77d314f711be3e65692d37afaad44f"
+    },
+    {
+      "path": "samples/Bongos/2_13.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb929070c28835f37586371f0a8099dffe8dd1e9",
+      "size": 41150,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/eb929070c28835f37586371f0a8099dffe8dd1e9"
+    },
+    {
+      "path": "samples/Bongos/2_14.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e319fb31c6676d0f961eab2706208f745c1558ce",
+      "size": 40842,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e319fb31c6676d0f961eab2706208f745c1558ce"
+    },
+    {
+      "path": "samples/Bongos/2_15.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a6744a3fc97e6b98097924146e2ac8f423d16d4",
+      "size": 37781,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4a6744a3fc97e6b98097924146e2ac8f423d16d4"
+    },
+    {
+      "path": "samples/Bongos/2_16.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37240da33109f65cdc0d806840634336af139741",
+      "size": 39553,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/37240da33109f65cdc0d806840634336af139741"
+    },
+    {
+      "path": "samples/Bongos/2_17.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3fe7cf125277fa4738b9c52f8ab11eb57b93685",
+      "size": 43914,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b3fe7cf125277fa4738b9c52f8ab11eb57b93685"
+    },
+    {
+      "path": "samples/Bongos/2_18.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eeb81b6538de640b11bf01c68950fa3621dd414",
+      "size": 28363,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3eeb81b6538de640b11bf01c68950fa3621dd414"
+    },
+    {
+      "path": "samples/Bongos/2_19.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7c312c300f0788dfab386464672b0c2ffc805ff",
+      "size": 24933,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a7c312c300f0788dfab386464672b0c2ffc805ff"
+    },
+    {
+      "path": "samples/Bongos/2_20.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01d17ed30c7af27fd58fd0ec9fb4c7a9b885b26d",
+      "size": 36080,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/01d17ed30c7af27fd58fd0ec9fb4c7a9b885b26d"
+    },
+    {
+      "path": "samples/CajonFlamenco",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e0623d37d89a7d77198d4958ce06521ac6a5c50",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/7e0623d37d89a7d77198d4958ce06521ac6a5c50"
+    },
+    {
+      "path": "samples/CajonFlamenco/101.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f92f8415a1094f3b5503f2b6e12851f64bc9d0fa",
+      "size": 41371,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/f92f8415a1094f3b5503f2b6e12851f64bc9d0fa"
+    },
+    {
+      "path": "samples/CajonFlamenco/102.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4764a4815e963009dd11a00ac5ebf096412c1e61",
+      "size": 39272,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4764a4815e963009dd11a00ac5ebf096412c1e61"
+    },
+    {
+      "path": "samples/CajonFlamenco/103.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ede2de2af60c8085435f72a0cb4f927e7e5a63fe",
+      "size": 36037,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ede2de2af60c8085435f72a0cb4f927e7e5a63fe"
+    },
+    {
+      "path": "samples/CajonFlamenco/104.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5acdcd559ef179cd4c46da14f537f729a524fd8",
+      "size": 46716,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d5acdcd559ef179cd4c46da14f537f729a524fd8"
+    },
+    {
+      "path": "samples/CajonFlamenco/105.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4225592edd14c09c9111da12e7611aee7b774f18",
+      "size": 40453,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4225592edd14c09c9111da12e7611aee7b774f18"
+    },
+    {
+      "path": "samples/CajonFlamenco/106.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c03f1aff81f574c647a7159c470289d1c9baf1d2",
+      "size": 36919,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c03f1aff81f574c647a7159c470289d1c9baf1d2"
+    },
+    {
+      "path": "samples/CajonFlamenco/107.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb1be465b5ea6330ee7b5220a47bc9418148bc0f",
+      "size": 37870,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/bb1be465b5ea6330ee7b5220a47bc9418148bc0f"
+    },
+    {
+      "path": "samples/CajonFlamenco/109.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd728d8e7bb4255e2bc07596ecb02469b2d915c5",
+      "size": 41859,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/cd728d8e7bb4255e2bc07596ecb02469b2d915c5"
+    },
+    {
+      "path": "samples/CajonFlamenco/110.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ec0336e9173a2971cfcaf3af10506cb8826383e",
+      "size": 43903,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7ec0336e9173a2971cfcaf3af10506cb8826383e"
+    },
+    {
+      "path": "samples/CajonFlamenco/111.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b2b0e3706abd81803de397cc5a062d8e9c3b880",
+      "size": 38719,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0b2b0e3706abd81803de397cc5a062d8e9c3b880"
+    },
+    {
+      "path": "samples/CajonFlamenco/115.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3364eb9395788a4f0b1dc6181d331193a5e72086",
+      "size": 40108,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3364eb9395788a4f0b1dc6181d331193a5e72086"
+    },
+    {
+      "path": "samples/CajonFlamenco/201.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c589d0f8930eb0aa2124985df9d1f0c046bfa32",
+      "size": 37511,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9c589d0f8930eb0aa2124985df9d1f0c046bfa32"
+    },
+    {
+      "path": "samples/CajonFlamenco/202.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bd7b734021dabff268d8785f1be48d1dfeeb883",
+      "size": 41331,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1bd7b734021dabff268d8785f1be48d1dfeeb883"
+    },
+    {
+      "path": "samples/CajonFlamenco/203.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82aac5f0964562fbe523c3be8c0c8618949454cd",
+      "size": 39637,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/82aac5f0964562fbe523c3be8c0c8618949454cd"
+    },
+    {
+      "path": "samples/CajonFlamenco/204.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af1bac88f7e6af2500faf7e4cb0be6d4ffba93e3",
+      "size": 37073,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/af1bac88f7e6af2500faf7e4cb0be6d4ffba93e3"
+    },
+    {
+      "path": "samples/CajonFlamenco/205.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d16998442d7a300221042b88f6067fa5c0b39b7",
+      "size": 35504,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1d16998442d7a300221042b88f6067fa5c0b39b7"
+    },
+    {
+      "path": "samples/CajonFlamenco/206.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7deb6ee2f06fd4a126d8ae7e17ce5b4a38f4478c",
+      "size": 37667,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7deb6ee2f06fd4a126d8ae7e17ce5b4a38f4478c"
+    },
+    {
+      "path": "samples/CajonFlamenco/207.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bc42b33f0f6621c0bf28dd0b3e90702dfe0a398",
+      "size": 31749,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2bc42b33f0f6621c0bf28dd0b3e90702dfe0a398"
+    },
+    {
+      "path": "samples/CajonFlamenco/208.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90eedb9bea0908768790f8bb8d15fb7bcc533ced",
+      "size": 37571,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/90eedb9bea0908768790f8bb8d15fb7bcc533ced"
+    },
+    {
+      "path": "samples/CajonFlamenco/209.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b349a49adc9d1ddebce0d7fe91f94d6d44d3ab3",
+      "size": 38664,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2b349a49adc9d1ddebce0d7fe91f94d6d44d3ab3"
+    },
+    {
+      "path": "samples/CajonFlamenco/210.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb655eed7c7b09704e26a4510a15d65029387cd4",
+      "size": 38107,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/cb655eed7c7b09704e26a4510a15d65029387cd4"
+    },
+    {
+      "path": "samples/CajonFlamenco/211.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d17b2b57a83e5a60933d76bd46e24dfb47f2af6e",
+      "size": 37897,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d17b2b57a83e5a60933d76bd46e24dfb47f2af6e"
+    },
+    {
+      "path": "samples/CajonFlamenco/212.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85aaef1643731a1c3a0b66172822d348cdfc3d74",
+      "size": 35284,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/85aaef1643731a1c3a0b66172822d348cdfc3d74"
+    },
+    {
+      "path": "samples/CajonFlamenco/214.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dec707bb54c385392aaf0a2a1d246a039ef34e8",
+      "size": 35934,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9dec707bb54c385392aaf0a2a1d246a039ef34e8"
+    },
+    {
+      "path": "samples/CajonFlamenco/216.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2965ac4309b488dae7c1731f839dc075482ae1e",
+      "size": 42209,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d2965ac4309b488dae7c1731f839dc075482ae1e"
+    },
+    {
+      "path": "samples/CajonFlamenco/217.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "223c1201d33232d5d3a913d74c332e5d5dc7156e",
+      "size": 35681,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/223c1201d33232d5d3a913d74c332e5d5dc7156e"
+    },
+    {
+      "path": "samples/CajonFlamenco/218.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebb13fd367368ff6edb87b50dcd374fa39d22ef9",
+      "size": 37785,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ebb13fd367368ff6edb87b50dcd374fa39d22ef9"
+    },
+    {
+      "path": "samples/CajonFlamenco/219.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cb81c9f7c3d49d9e391c27f27b679011b75b398",
+      "size": 42421,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2cb81c9f7c3d49d9e391c27f27b679011b75b398"
+    },
+    {
+      "path": "samples/CajonFlamenco/220.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e23c43c30b0cadd7e827e1c2a21e59a47dd6c8b8",
+      "size": 25643,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e23c43c30b0cadd7e827e1c2a21e59a47dd6c8b8"
+    },
+    {
+      "path": "samples/CajonFlamenco/221.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dece0437ebea927a685129f8975190c01d80437d",
+      "size": 39954,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/dece0437ebea927a685129f8975190c01d80437d"
+    },
+    {
+      "path": "samples/CajonFlamenco/222.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7016a1b16529640a2c73584b71aa77285884d5d3",
+      "size": 43854,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7016a1b16529640a2c73584b71aa77285884d5d3"
+    },
+    {
+      "path": "samples/Castanets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "805877097732fe105ccad6653bd790976345ba02",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/805877097732fe105ccad6653bd790976345ba02"
+    },
+    {
+      "path": "samples/Castanets/01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "623461e7670afa82c0eb49672c1c42e8d408bac6",
+      "size": 33134,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/623461e7670afa82c0eb49672c1c42e8d408bac6"
+    },
+    {
+      "path": "samples/Castanets/02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef22a9b28a845cad258d758c7d776ae6495133dc",
+      "size": 29600,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ef22a9b28a845cad258d758c7d776ae6495133dc"
+    },
+    {
+      "path": "samples/Castanets/03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "627a3f2de2373012fcbe8f8a21441701b2a073d1",
+      "size": 30672,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/627a3f2de2373012fcbe8f8a21441701b2a073d1"
+    },
+    {
+      "path": "samples/Castanets/04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92f98182e857c2da7f7d49b88f970f8b101277ea",
+      "size": 31963,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/92f98182e857c2da7f7d49b88f970f8b101277ea"
+    },
+    {
+      "path": "samples/Castanets/05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "346d8732e903b0f2d13bd89213c47ae19332ec29",
+      "size": 31290,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/346d8732e903b0f2d13bd89213c47ae19332ec29"
+    },
+    {
+      "path": "samples/Castanets/06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a09254b55f40154bc14a73f8f8e52bac15d223f9",
+      "size": 33518,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a09254b55f40154bc14a73f8f8e52bac15d223f9"
+    },
+    {
+      "path": "samples/Castanets/07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dddcdd210f13f08e788353a996f63a06953bada",
+      "size": 30950,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5dddcdd210f13f08e788353a996f63a06953bada"
+    },
+    {
+      "path": "samples/Castanets/08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b20530847bc97a9821447922c5714cf71eaf7e",
+      "size": 32573,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/29b20530847bc97a9821447922c5714cf71eaf7e"
+    },
+    {
+      "path": "samples/Castanets/09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b394f064748a0eb3571a61d3350ca7b36a0e4b45",
+      "size": 29604,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b394f064748a0eb3571a61d3350ca7b36a0e4b45"
+    },
+    {
+      "path": "samples/Castanets/10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16b59fc25b8653fe25291bb61bdc728424d0e92c",
+      "size": 30139,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/16b59fc25b8653fe25291bb61bdc728424d0e92c"
+    },
+    {
+      "path": "samples/Castanets/11.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9570f9cde6d18c766a4a8d3fb95e3fb97719881e",
+      "size": 25441,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9570f9cde6d18c766a4a8d3fb95e3fb97719881e"
+    },
+    {
+      "path": "samples/Castanets/12.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd0644621ae475c8fc0238827f4ef4e1d2e0c039",
+      "size": 30509,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fd0644621ae475c8fc0238827f4ef4e1d2e0c039"
+    },
+    {
+      "path": "samples/Castanets/13.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb07e418dbe16f99c8328e7b3f463353d544255d",
+      "size": 31402,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fb07e418dbe16f99c8328e7b3f463353d544255d"
+    },
+    {
+      "path": "samples/Castanets/14.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f0f92ca63180eba1ed014889972b3e16494263e",
+      "size": 32209,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1f0f92ca63180eba1ed014889972b3e16494263e"
+    },
+    {
+      "path": "samples/Castanets/15.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85e973793bf465be10fadaf5622c330376dbb713",
+      "size": 32320,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/85e973793bf465be10fadaf5622c330376dbb713"
+    },
+    {
+      "path": "samples/Castanets/16.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5a9cb514d0a16aa57f2f35c3bf1663422a6f032",
+      "size": 30533,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d5a9cb514d0a16aa57f2f35c3bf1663422a6f032"
+    },
+    {
+      "path": "samples/Claves",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08cb6faaedf5b3f52d486288dc5c05f37f1a4f2b",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/08cb6faaedf5b3f52d486288dc5c05f37f1a4f2b"
+    },
+    {
+      "path": "samples/Claves/01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b81bd36cd3fe99c9a17ec3040879f6422741cac",
+      "size": 45553,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5b81bd36cd3fe99c9a17ec3040879f6422741cac"
+    },
+    {
+      "path": "samples/Claves/02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c981fcd0b73609a426e63b71d2252208eefdec99",
+      "size": 41112,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c981fcd0b73609a426e63b71d2252208eefdec99"
+    },
+    {
+      "path": "samples/Claves/03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3301c54a9a9b75e3ed135fdf1c43b9e5fec17cf1",
+      "size": 40409,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3301c54a9a9b75e3ed135fdf1c43b9e5fec17cf1"
+    },
+    {
+      "path": "samples/Claves/04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f53231ff0a3599cb517590f94f8e3a75af70e8a",
+      "size": 46473,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5f53231ff0a3599cb517590f94f8e3a75af70e8a"
+    },
+    {
+      "path": "samples/Conga",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7045d95bec31e2e82c9c180fd0877eb968f94e65",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/7045d95bec31e2e82c9c180fd0877eb968f94e65"
+    },
+    {
+      "path": "samples/Conga/v2_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0316425fac5637cd4dcdeda6bd466bb3a924c6e9",
+      "size": 29268,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0316425fac5637cd4dcdeda6bd466bb3a924c6e9"
+    },
+    {
+      "path": "samples/Conga/v2_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d869ef1eff10539b8ac5be222f312a7d3dfcbdb8",
+      "size": 29647,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d869ef1eff10539b8ac5be222f312a7d3dfcbdb8"
+    },
+    {
+      "path": "samples/Conga/v2_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84787cb2e71550f40bbcc135ef08d0f2d5505f72",
+      "size": 27885,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/84787cb2e71550f40bbcc135ef08d0f2d5505f72"
+    },
+    {
+      "path": "samples/Conga/v2_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13bb3decc75b0a030112559d1bd0647f458dd63",
+      "size": 27244,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c13bb3decc75b0a030112559d1bd0647f458dd63"
+    },
+    {
+      "path": "samples/Conga/v3_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64cfa17366dec4065ec846cf125617baefea9cf5",
+      "size": 35422,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/64cfa17366dec4065ec846cf125617baefea9cf5"
+    },
+    {
+      "path": "samples/Conga/v3_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24766b1f88dac64ccf70f6495a61e7c5d39dac58",
+      "size": 34323,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/24766b1f88dac64ccf70f6495a61e7c5d39dac58"
+    },
+    {
+      "path": "samples/Conga/v3_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fa833c3806ace9c142b43236f778aea7cd3168b",
+      "size": 33507,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2fa833c3806ace9c142b43236f778aea7cd3168b"
+    },
+    {
+      "path": "samples/Conga/v3_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5effccdf54783d77bd18ab0c988ac768b6a7167",
+      "size": 32552,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/f5effccdf54783d77bd18ab0c988ac768b6a7167"
+    },
+    {
+      "path": "samples/Darbuka",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be0dc174f05e7ad1cbee2ac18ed6497e05f8db05",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/be0dc174f05e7ad1cbee2ac18ed6497e05f8db05"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c388c23023c4e339e2fd86c7d8703555a8cc2447",
+      "size": 55319,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c388c23023c4e339e2fd86c7d8703555a8cc2447"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3941a1bb523895453b346e56c6526d07239dbd2f",
+      "size": 59984,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3941a1bb523895453b346e56c6526d07239dbd2f"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eba5888d6b0b6ee95f49dddc24c924b732a88a2a",
+      "size": 58860,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/eba5888d6b0b6ee95f49dddc24c924b732a88a2a"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3825974e370e3619afbd9d082bfebbc3dcbe7a3",
+      "size": 55691,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c3825974e370e3619afbd9d082bfebbc3dcbe7a3"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eadd73f9be1dd333409e484f8cabc40c3439ba8b",
+      "size": 46761,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/eadd73f9be1dd333409e484f8cabc40c3439ba8b"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05c44f6d53cdd03fa026e885814675d802979539",
+      "size": 69334,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/05c44f6d53cdd03fa026e885814675d802979539"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2c76f2184bc7775d01f6d8d83f543c715df1f77",
+      "size": 57375,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a2c76f2184bc7775d01f6d8d83f543c715df1f77"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d484065a233c6c821b0ceeb00754e64365f88fe0",
+      "size": 54739,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d484065a233c6c821b0ceeb00754e64365f88fe0"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a7c189a4a04367c155df6d602035a286b446daf",
+      "size": 58244,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0a7c189a4a04367c155df6d602035a286b446daf"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e75bfd3c1a1bfd5f510803c8c02fd66fe975a1e",
+      "size": 53233,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/8e75bfd3c1a1bfd5f510803c8c02fd66fe975a1e"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_11.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0b90a84c4f7beecb3b02679be9af3995d46278a",
+      "size": 50425,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c0b90a84c4f7beecb3b02679be9af3995d46278a"
+    },
+    {
+      "path": "samples/Darbuka/doom_01_12.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "805738b2407e5d0a5409ca17247fe913fa579056",
+      "size": 46263,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/805738b2407e5d0a5409ca17247fe913fa579056"
+    },
+    {
+      "path": "samples/Darbuka/pa_03_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac4942d3f8c35901bf7b69bc255cee462381e246",
+      "size": 51947,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ac4942d3f8c35901bf7b69bc255cee462381e246"
+    },
+    {
+      "path": "samples/Darbuka/pa_03_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44526a077d3922d5218954fdb11c93d8f7151575",
+      "size": 32792,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/44526a077d3922d5218954fdb11c93d8f7151575"
+    },
+    {
+      "path": "samples/Darbuka/pa_03_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cd81a8c88ab8d1fb0629ae0f1e580721cd4b442",
+      "size": 43468,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0cd81a8c88ab8d1fb0629ae0f1e580721cd4b442"
+    },
+    {
+      "path": "samples/Darbuka/pa_03_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5109b5f2743571e0c06713931a92e0adc2bbb46",
+      "size": 50532,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e5109b5f2743571e0c06713931a92e0adc2bbb46"
+    },
+    {
+      "path": "samples/Darbuka/pa_03_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b7c60c9f87ff7f814215eccf0fd8a4e9730df18",
+      "size": 41487,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1b7c60c9f87ff7f814215eccf0fd8a4e9730df18"
+    },
+    {
+      "path": "samples/Darbuka/pa_03_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e36f921242f79dfa9673e309c82965e405f548e",
+      "size": 44225,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4e36f921242f79dfa9673e309c82965e405f548e"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73c000a8fe6a94209cfec71921d8b5f17f0d6afb",
+      "size": 49634,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/73c000a8fe6a94209cfec71921d8b5f17f0d6afb"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dc49afa91c64719aa8a0cae3a04dfe2f36cc80c",
+      "size": 43786,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2dc49afa91c64719aa8a0cae3a04dfe2f36cc80c"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60eaab92e099fdeb0bf72cf16fa689dea5970f9e",
+      "size": 46691,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/60eaab92e099fdeb0bf72cf16fa689dea5970f9e"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9455611a199fc1bc365365c12b0d725dc2005704",
+      "size": 46184,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9455611a199fc1bc365365c12b0d725dc2005704"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336405c15ec0c8b6b2cfed036e2949e012d6ed91",
+      "size": 41218,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/336405c15ec0c8b6b2cfed036e2949e012d6ed91"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aa5f28df4038da6082d87356719cbd749f7c5f9",
+      "size": 47013,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3aa5f28df4038da6082d87356719cbd749f7c5f9"
+    },
+    {
+      "path": "samples/Darbuka/tak_02_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc8b9c6ae1dd0f53e381dfb08efe8ed6a03e076",
+      "size": 49773,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4cc8b9c6ae1dd0f53e381dfb08efe8ed6a03e076"
+    },
+    {
+      "path": "samples/EggShaker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "136569b977184162b25e884d3c8353c920799d24",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/136569b977184162b25e884d3c8353c920799d24"
+    },
+    {
+      "path": "samples/EggShaker/fast_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e083a22ccc4f78d857644d8f0e52e77d7283cd0",
+      "size": 36280,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1e083a22ccc4f78d857644d8f0e52e77d7283cd0"
+    },
+    {
+      "path": "samples/EggShaker/fast_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "656a743ed9070216c0d39b3087b31e8ce514d830",
+      "size": 54801,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/656a743ed9070216c0d39b3087b31e8ce514d830"
+    },
+    {
+      "path": "samples/EggShaker/fast_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf4448bcfc274bc8d9ffac596589d956ea61f04a",
+      "size": 41856,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/bf4448bcfc274bc8d9ffac596589d956ea61f04a"
+    },
+    {
+      "path": "samples/EggShaker/fast_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0af9fe5e85dec70cdf2d4e2ab641df093d26ef20",
+      "size": 43173,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0af9fe5e85dec70cdf2d4e2ab641df093d26ef20"
+    },
+    {
+      "path": "samples/EggShaker/fast_05.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e39a59e62c21208cd6c24e3f0f36a550338125a",
+      "size": 35904,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7e39a59e62c21208cd6c24e3f0f36a550338125a"
+    },
+    {
+      "path": "samples/EggShaker/fast_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ae803196db6606109dc079020fc628299c1bf79",
+      "size": 39098,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/8ae803196db6606109dc079020fc628299c1bf79"
+    },
+    {
+      "path": "samples/EggShaker/fast_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f2d7abc9dc27d76268a197b479af29c86ff4565",
+      "size": 48471,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/8f2d7abc9dc27d76268a197b479af29c86ff4565"
+    },
+    {
+      "path": "samples/EggShaker/fast_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa7fc842d298a05d52c8f240b05222dc88d84609",
+      "size": 53078,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fa7fc842d298a05d52c8f240b05222dc88d84609"
+    },
+    {
+      "path": "samples/EggShaker/fast_09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eefae09c7e01ea20c3e4ead37946f0ce816178f",
+      "size": 34700,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5eefae09c7e01ea20c3e4ead37946f0ce816178f"
+    },
+    {
+      "path": "samples/EggShaker/fast_10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6471639e7039e6fb62e2e06a99a962cd17c50b5d",
+      "size": 43173,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/6471639e7039e6fb62e2e06a99a962cd17c50b5d"
+    },
+    {
+      "path": "samples/EggShaker/fast_11.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "673aa9bcba0714897cf1baba4d178495edae051b",
+      "size": 55755,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/673aa9bcba0714897cf1baba4d178495edae051b"
+    },
+    {
+      "path": "samples/EggShaker/fast_12.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25f23ac05bf5152e51e075955f2f85cdeafd9054",
+      "size": 50639,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/25f23ac05bf5152e51e075955f2f85cdeafd9054"
+    },
+    {
+      "path": "samples/EggShaker/slow_01.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef06760f1f00fbcc923c89aceb0656986c7e90e7",
+      "size": 19836,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ef06760f1f00fbcc923c89aceb0656986c7e90e7"
+    },
+    {
+      "path": "samples/EggShaker/slow_02.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "747d6d7e7c7e1636d14f095e071ed72497896d55",
+      "size": 17106,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/747d6d7e7c7e1636d14f095e071ed72497896d55"
+    },
+    {
+      "path": "samples/EggShaker/slow_03.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53f8529e6900ec1e74dc5e1f9aec592e94633a2",
+      "size": 23372,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e53f8529e6900ec1e74dc5e1f9aec592e94633a2"
+    },
+    {
+      "path": "samples/EggShaker/slow_04.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "586bdbdde477c64c168ce65ab6885e8e366605d5",
+      "size": 16464,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/586bdbdde477c64c168ce65ab6885e8e366605d5"
+    },
+    {
+      "path": "samples/EggShaker/slow_05.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f76857e873a23ac84e700f9f625c3818629e8fb",
+      "size": 22608,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7f76857e873a23ac84e700f9f625c3818629e8fb"
+    },
+    {
+      "path": "samples/EggShaker/slow_06.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94a95cc30703c5211918f3759aeba29369d38b41",
+      "size": 16292,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/94a95cc30703c5211918f3759aeba29369d38b41"
+    },
+    {
+      "path": "samples/EggShaker/slow_07.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb4994b450c0b1c80cbe87261b98b8f433b2371b",
+      "size": 29792,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fb4994b450c0b1c80cbe87261b98b8f433b2371b"
+    },
+    {
+      "path": "samples/EggShaker/slow_08.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7a704112d82179cefc72e16ec850fa39393e82c",
+      "size": 14988,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b7a704112d82179cefc72e16ec850fa39393e82c"
+    },
+    {
+      "path": "samples/EggShaker/slow_09.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "690b9c2ee04be3288317f87516c200225cf5e8c6",
+      "size": 14292,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/690b9c2ee04be3288317f87516c200225cf5e8c6"
+    },
+    {
+      "path": "samples/EggShaker/slow_10.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54fe6dba9ef01690e764657d2af7d5aaa56af471",
+      "size": 17018,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/54fe6dba9ef01690e764657d2af7d5aaa56af471"
+    },
+    {
+      "path": "samples/EggShaker/slow_11.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b4d33d3aa429ab4ba840bca9f9ba9d51f583cbf",
+      "size": 19310,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/8b4d33d3aa429ab4ba840bca9f9ba9d51f583cbf"
+    },
+    {
+      "path": "samples/EggShaker/slow_12.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14ef0a179c25cea62a35f79fdbfc9b7d0c35c8c2",
+      "size": 13592,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/14ef0a179c25cea62a35f79fdbfc9b7d0c35c8c2"
+    },
+    {
+      "path": "samples/EggShaker/slow_13.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eb36c032ba213efc32244fdb72b3ffaf11cdef6",
+      "size": 16692,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5eb36c032ba213efc32244fdb72b3ffaf11cdef6"
+    },
+    {
+      "path": "samples/EggShaker/slow_14.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c818212422844f61819a983036af8ad11af8af4f",
+      "size": 27368,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c818212422844f61819a983036af8ad11af8af4f"
+    },
+    {
+      "path": "samples/EggShaker/soft_01.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f3256b61701573b99125bd9e233c9c0daf9bdbe",
+      "size": 17636,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2f3256b61701573b99125bd9e233c9c0daf9bdbe"
+    },
+    {
+      "path": "samples/EggShaker/soft_02.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "987b36c4e7930acf7deef1fb852aa3150d1f5f33",
+      "size": 16986,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/987b36c4e7930acf7deef1fb852aa3150d1f5f33"
+    },
+    {
+      "path": "samples/EggShaker/soft_03.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41cdf657acde753248d3ea623381772bf2b42429",
+      "size": 15710,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/41cdf657acde753248d3ea623381772bf2b42429"
+    },
+    {
+      "path": "samples/EggShaker/soft_04.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3367de10f2151a5d61d741b91e54ae2ca229d2f4",
+      "size": 21354,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3367de10f2151a5d61d741b91e54ae2ca229d2f4"
+    },
+    {
+      "path": "samples/EggShaker/soft_05.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f93608757fbf53161e5576ef546a1c0979bcc12",
+      "size": 18744,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3f93608757fbf53161e5576ef546a1c0979bcc12"
+    },
+    {
+      "path": "samples/EggShaker/soft_06.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3bca30156f2b6e8cbb73927b52075c2f1af2c4a",
+      "size": 23184,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c3bca30156f2b6e8cbb73927b52075c2f1af2c4a"
+    },
+    {
+      "path": "samples/EggShaker/soft_07.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9828b56667684caa232419c3528e411f8dc7c1d5",
+      "size": 21966,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9828b56667684caa232419c3528e411f8dc7c1d5"
+    },
+    {
+      "path": "samples/EggShaker/soft_08.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c95f7cf73a9cd747933389b4e3ec33591ee30e75",
+      "size": 18368,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c95f7cf73a9cd747933389b4e3ec33591ee30e75"
+    },
+    {
+      "path": "samples/EggShaker/soft_09.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b91eb001e8dc4bd16409e01981c2d045855a796d",
+      "size": 20916,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b91eb001e8dc4bd16409e01981c2d045855a796d"
+    },
+    {
+      "path": "samples/EggShaker/soft_10.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0830689f2267db94172404218efad5c4d57dcb8",
+      "size": 22200,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e0830689f2267db94172404218efad5c4d57dcb8"
+    },
+    {
+      "path": "samples/EggShaker/soft_11.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90a5700ae449163dda0261822a8c39e4033fca19",
+      "size": 23982,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/90a5700ae449163dda0261822a8c39e4033fca19"
+    },
+    {
+      "path": "samples/EggShaker/soft_12.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cde3d69f72815125364901025e300559d8d9e15",
+      "size": 24048,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/5cde3d69f72815125364901025e300559d8d9e15"
+    },
+    {
+      "path": "samples/EggShaker/soft_13.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "978573978c8262231573aeddbad6f7497327b6ad",
+      "size": 19040,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/978573978c8262231573aeddbad6f7497327b6ad"
+    },
+    {
+      "path": "samples/EggShaker/soft_14.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "867babb457d9e212c6c969a468372b26ed5d047f",
+      "size": 25692,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/867babb457d9e212c6c969a468372b26ed5d047f"
+    },
+    {
+      "path": "samples/HandClap",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d23c96e04258cb68b28e65f4ffd61497eb26a3f9",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/d23c96e04258cb68b28e65f4ffd61497eb26a3f9"
+    },
+    {
+      "path": "samples/HandClap/01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d109ad96b42e8b4bcf681012599b9390c4854d19",
+      "size": 36466,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d109ad96b42e8b4bcf681012599b9390c4854d19"
+    },
+    {
+      "path": "samples/HandClap/01_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b202930a53bff27d59da5c2bb3a142621c771354",
+      "size": 32127,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b202930a53bff27d59da5c2bb3a142621c771354"
+    },
+    {
+      "path": "samples/HandClap/01_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad4e4af8707c02f3ea33b1b086c175c16a042f5",
+      "size": 35177,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/6ad4e4af8707c02f3ea33b1b086c175c16a042f5"
+    },
+    {
+      "path": "samples/HandClap/01_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005f59d060abb0f6123dc02e5b25109c1283a554",
+      "size": 32614,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/005f59d060abb0f6123dc02e5b25109c1283a554"
+    },
+    {
+      "path": "samples/HandClap/01_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acaf3b120a3a2906322ab9a83cfdec41776abed4",
+      "size": 32257,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/acaf3b120a3a2906322ab9a83cfdec41776abed4"
+    },
+    {
+      "path": "samples/HandClap/01_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1469f78f04d1e134d282c96a5b27100ba7b2bd1",
+      "size": 34092,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c1469f78f04d1e134d282c96a5b27100ba7b2bd1"
+    },
+    {
+      "path": "samples/HandClap/01_09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6c51e7113c1366b483736e8c242564396fc0195",
+      "size": 30713,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e6c51e7113c1366b483736e8c242564396fc0195"
+    },
+    {
+      "path": "samples/HandClap/02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f7723aec1193a44dff13b7aee0df676c1665343",
+      "size": 30376,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9f7723aec1193a44dff13b7aee0df676c1665343"
+    },
+    {
+      "path": "samples/HandClap/02_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f16ffa31a79d50e30e08af96f6371ef38317bd26",
+      "size": 31272,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/f16ffa31a79d50e30e08af96f6371ef38317bd26"
+    },
+    {
+      "path": "samples/HighConga",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c71193a56e21bf59b87b7f1453dc0031b4dcf24",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/2c71193a56e21bf59b87b7f1453dc0031b4dcf24"
+    },
+    {
+      "path": "samples/HighConga/v2_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25e0d2c908738984fdf9011eb87b82f4d10321dc",
+      "size": 28540,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/25e0d2c908738984fdf9011eb87b82f4d10321dc"
+    },
+    {
+      "path": "samples/HighConga/v2_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9ece03d775833aadaf763fde4ba11130e08709b",
+      "size": 28382,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c9ece03d775833aadaf763fde4ba11130e08709b"
+    },
+    {
+      "path": "samples/HighConga/v2_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bcb6309d92966c62711c7d9e32f57708fa8954f",
+      "size": 30743,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4bcb6309d92966c62711c7d9e32f57708fa8954f"
+    },
+    {
+      "path": "samples/HighConga/v2_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdd1657441553e2a63331626b01112f222a1ffea",
+      "size": 30260,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/bdd1657441553e2a63331626b01112f222a1ffea"
+    },
+    {
+      "path": "samples/HighConga/v3_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "352f7f5ab035886d7351c75d966ac3e88dd63c69",
+      "size": 30463,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/352f7f5ab035886d7351c75d966ac3e88dd63c69"
+    },
+    {
+      "path": "samples/HighConga/v3_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad52e777079775477820658beb0d1899d36eb77d",
+      "size": 32577,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ad52e777079775477820658beb0d1899d36eb77d"
+    },
+    {
+      "path": "samples/HighConga/v3_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b217ddf4c933d6c0a141b2d5d396608b7cb3281",
+      "size": 29022,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3b217ddf4c933d6c0a141b2d5d396608b7cb3281"
+    },
+    {
+      "path": "samples/HighConga/v3_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f72fc6d83eb42ca19f2643b276479674d68786a",
+      "size": 29282,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4f72fc6d83eb42ca19f2643b276479674d68786a"
+    },
+    {
+      "path": "samples/LowConga",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "808b47862f68e0bdf0c8da2b201cc8b7542510fa",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/808b47862f68e0bdf0c8da2b201cc8b7542510fa"
+    },
+    {
+      "path": "samples/LowConga/v3_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f0eb8a883671c97ec554eaf910074b8bda6699e",
+      "size": 28375,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/6f0eb8a883671c97ec554eaf910074b8bda6699e"
+    },
+    {
+      "path": "samples/LowConga/v3_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e9bbce9611b621ad60efa6964f8be69b2358619",
+      "size": 27950,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4e9bbce9611b621ad60efa6964f8be69b2358619"
+    },
+    {
+      "path": "samples/LowConga/v3_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d828531afdc8083a14e24c817909bb745e1a14e",
+      "size": 27450,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4d828531afdc8083a14e24c817909bb745e1a14e"
+    },
+    {
+      "path": "samples/LowConga/v3_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0acc0e470c91c80af412292cf2c609adbe17f622",
+      "size": 28055,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0acc0e470c91c80af412292cf2c609adbe17f622"
+    },
+    {
+      "path": "samples/LowConga/v4_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db1ef719cacc75c955395f97151b3f7cc843d8b6",
+      "size": 32284,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/db1ef719cacc75c955395f97151b3f7cc843d8b6"
+    },
+    {
+      "path": "samples/LowConga/v4_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "820407401de22d34e7b24b224d646fed75c1642b",
+      "size": 31952,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/820407401de22d34e7b24b224d646fed75c1642b"
+    },
+    {
+      "path": "samples/Maracas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c160c6bc997b875c80a9d2823fe9c9aac7e0cb9",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/8c160c6bc997b875c80a9d2823fe9c9aac7e0cb9"
+    },
+    {
+      "path": "samples/Maracas/01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c197b0cff3c7ee4f226ca35fbf4a50159b33c9b7",
+      "size": 44402,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c197b0cff3c7ee4f226ca35fbf4a50159b33c9b7"
+    },
+    {
+      "path": "samples/Maracas/01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a2bed04fb6a338bd972e2f9e8d2da0d7c0dca8c",
+      "size": 46036,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/1a2bed04fb6a338bd972e2f9e8d2da0d7c0dca8c"
+    },
+    {
+      "path": "samples/Maracas/01_03.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b634080267dc92937d1f3d301d3e761a27e9a4ed",
+      "size": 47165,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b634080267dc92937d1f3d301d3e761a27e9a4ed"
+    },
+    {
+      "path": "samples/Maracas/01_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd7c3bd5007f1f2fd9b073b0d0f944cb8f6146b",
+      "size": 49189,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0fd7c3bd5007f1f2fd9b073b0d0f944cb8f6146b"
+    },
+    {
+      "path": "samples/Maracas/01_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6601f43eb2fa9f1e614f02460211790f0b4e87c0",
+      "size": 44541,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/6601f43eb2fa9f1e614f02460211790f0b4e87c0"
+    },
+    {
+      "path": "samples/Maracas/01_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bdd7803c202cac98e5534f16d076e9965f9ac3b",
+      "size": 38133,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3bdd7803c202cac98e5534f16d076e9965f9ac3b"
+    },
+    {
+      "path": "samples/Maracas/01_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87b44d773b7eab9777af32daf44ba2da360f47f2",
+      "size": 47873,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/87b44d773b7eab9777af32daf44ba2da360f47f2"
+    },
+    {
+      "path": "samples/Maracas/01_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eda1ef770677b21c9f60cbdc1908d4e494acecfa",
+      "size": 47820,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/eda1ef770677b21c9f60cbdc1908d4e494acecfa"
+    },
+    {
+      "path": "samples/Maracas/02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e56105ec43828c72e977fa556215f093c75755a",
+      "size": 31812,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0e56105ec43828c72e977fa556215f093c75755a"
+    },
+    {
+      "path": "samples/Maracas/02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b11e7c78496b232cdcf5cb0e16f4f90956c979e",
+      "size": 31684,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3b11e7c78496b232cdcf5cb0e16f4f90956c979e"
+    },
+    {
+      "path": "samples/Maracas/02_03.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3399c3ec2bf6c59f3b4f017313cd86e0649d7d1",
+      "size": 30431,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a3399c3ec2bf6c59f3b4f017313cd86e0649d7d1"
+    },
+    {
+      "path": "samples/Maracas/02_04.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da1ac0f3ba8850166864bfd5b004f69aab59c36e",
+      "size": 32339,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/da1ac0f3ba8850166864bfd5b004f69aab59c36e"
+    },
+    {
+      "path": "samples/Maracas/02_05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b481ea17b4c51263e3e009b22595346072b7a6df",
+      "size": 34042,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b481ea17b4c51263e3e009b22595346072b7a6df"
+    },
+    {
+      "path": "samples/Maracas/02_06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76ed33825e6a69d8d761ab4ad6200576d609d39c",
+      "size": 32767,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/76ed33825e6a69d8d761ab4ad6200576d609d39c"
+    },
+    {
+      "path": "samples/Maracas/02_07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a05b550b51edc371ed56019c697f409519ba2e35",
+      "size": 35837,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/a05b550b51edc371ed56019c697f409519ba2e35"
+    },
+    {
+      "path": "samples/Maracas/02_08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fda74e9c0eff3b1ce2768415ff4c7609499425f",
+      "size": 39240,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3fda74e9c0eff3b1ce2768415ff4c7609499425f"
+    },
+    {
+      "path": "samples/Maracas/02_09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc22c3764ae31b386ff9e7aa96a2bc17f3c97b5f",
+      "size": 31894,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/cc22c3764ae31b386ff9e7aa96a2bc17f3c97b5f"
+    },
+    {
+      "path": "samples/Maracas/02_10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fa6a95fd6200c01ddf0f7570dce4d98701ec936",
+      "size": 30211,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9fa6a95fd6200c01ddf0f7570dce4d98701ec936"
+    },
+    {
+      "path": "samples/Maracas/02_11.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca8a5491f88f329acf92a5b1effdb0bf23b6acff",
+      "size": 32318,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/ca8a5491f88f329acf92a5b1effdb0bf23b6acff"
+    },
+    {
+      "path": "samples/Maracas/02_12.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "922fbdf9f6fcf423a8b4ab8ae32bedd486e87e6e",
+      "size": 37609,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/922fbdf9f6fcf423a8b4ab8ae32bedd486e87e6e"
+    },
+    {
+      "path": "samples/MutedConga",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96c436d63f53b1f0550f3062fb6bc5ca1955eef4",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/96c436d63f53b1f0550f3062fb6bc5ca1955eef4"
+    },
+    {
+      "path": "samples/MutedConga/High_v2_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b3900b47ead7aa511c3a2ec5b35cb7f8543eeac",
+      "size": 23207,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9b3900b47ead7aa511c3a2ec5b35cb7f8543eeac"
+    },
+    {
+      "path": "samples/MutedConga/High_v2_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "008c6189129934fbee3d8a185903e4c938a3a379",
+      "size": 23847,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/008c6189129934fbee3d8a185903e4c938a3a379"
+    },
+    {
+      "path": "samples/MutedConga/High_v2_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e82fffdf80715d22401e464acf2b977184aec127",
+      "size": 24918,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e82fffdf80715d22401e464acf2b977184aec127"
+    },
+    {
+      "path": "samples/MutedConga/High_v2_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b929b440d7ff1deffda4ee28f63c9a249a59393",
+      "size": 25318,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3b929b440d7ff1deffda4ee28f63c9a249a59393"
+    },
+    {
+      "path": "samples/MutedConga/v1_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcf53e414ba0bb2faafb501f7338823bc1600ba",
+      "size": 24289,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/bbcf53e414ba0bb2faafb501f7338823bc1600ba"
+    },
+    {
+      "path": "samples/MutedConga/v1_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb26c485494975fe8ddea63beac8e6eae096a88a",
+      "size": 20823,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/eb26c485494975fe8ddea63beac8e6eae096a88a"
+    },
+    {
+      "path": "samples/MutedConga/v2_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ba2b06e358c35c18be3026d328a6613cb0add09",
+      "size": 28104,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2ba2b06e358c35c18be3026d328a6613cb0add09"
+    },
+    {
+      "path": "samples/MutedConga/v2_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e89be095cd023bbbe8a84a20949dc9f672dc8e30",
+      "size": 28366,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/e89be095cd023bbbe8a84a20949dc9f672dc8e30"
+    },
+    {
+      "path": "samples/MutedLowConga",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07195151089971a5d73b83c52e1adaa08bdfbae1",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/07195151089971a5d73b83c52e1adaa08bdfbae1"
+    },
+    {
+      "path": "samples/MutedLowConga/v3_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26cb13e6ca07c8ec24d894d6163173e698ae822c",
+      "size": 24895,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/26cb13e6ca07c8ec24d894d6163173e698ae822c"
+    },
+    {
+      "path": "samples/MutedLowConga/v3_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9951beadcfb4497c00db07217e5e31ea871f4bba",
+      "size": 24387,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9951beadcfb4497c00db07217e5e31ea871f4bba"
+    },
+    {
+      "path": "samples/MutedLowConga/v3_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7232cee63f49d5a82044229445898076eeed862c",
+      "size": 24551,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7232cee63f49d5a82044229445898076eeed862c"
+    },
+    {
+      "path": "samples/MutedLowConga/v3_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d033c16664cb6105abf2efcb26c4c162473494c9",
+      "size": 24768,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d033c16664cb6105abf2efcb26c4c162473494c9"
+    },
+    {
+      "path": "samples/MutedLowConga/v4_01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5e0400fca303d7604b9d8cdb08aa3d810c38c8d",
+      "size": 29003,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/c5e0400fca303d7604b9d8cdb08aa3d810c38c8d"
+    },
+    {
+      "path": "samples/MutedLowConga/v4_01_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43fed917a90414196dda06dbb51524abe4a713be",
+      "size": 28792,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/43fed917a90414196dda06dbb51524abe4a713be"
+    },
+    {
+      "path": "samples/MutedLowConga/v4_02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "761d9b02564e592ff622eecb53c7b26a40c78323",
+      "size": 31009,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/761d9b02564e592ff622eecb53c7b26a40c78323"
+    },
+    {
+      "path": "samples/MutedLowConga/v4_02_02.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b45d1154fbb16988567da75a39b58668f6e1b043",
+      "size": 30145,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/b45d1154fbb16988567da75a39b58668f6e1b043"
+    },
+    {
+      "path": "samples/Tambourine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c28827902fb0392b4af3dc6c48e142ff0a8be5c4",
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/trees/c28827902fb0392b4af3dc6c48e142ff0a8be5c4"
+    },
+    {
+      "path": "samples/Tambourine/01_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d41989f1b59e69d4575eef36e8c6070e4fb4928",
+      "size": 43679,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/0d41989f1b59e69d4575eef36e8c6070e4fb4928"
+    },
+    {
+      "path": "samples/Tambourine/02_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d847c4d27716a8eb5b8bf64db92973e8a8e1fab5",
+      "size": 60371,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/d847c4d27716a8eb5b8bf64db92973e8a8e1fab5"
+    },
+    {
+      "path": "samples/Tambourine/03_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f4c2e7d6d3a19e3d7f9151d4081a2ed016e085",
+      "size": 65775,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/49f4c2e7d6d3a19e3d7f9151d4081a2ed016e085"
+    },
+    {
+      "path": "samples/Tambourine/04_01.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80f825cf31105d5d0e251f5a8a10101b59f9a6a",
+      "size": 67388,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/f80f825cf31105d5d0e251f5a8a10101b59f9a6a"
+    },
+    {
+      "path": "samples/Tambourine/05.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82feffbba4cd369ee707dcf9ea45cc230d2523dc",
+      "size": 64141,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/82feffbba4cd369ee707dcf9ea45cc230d2523dc"
+    },
+    {
+      "path": "samples/Tambourine/06.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36e799c048a67d8f65b88db8d08ab12a9fbfb087",
+      "size": 66588,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/36e799c048a67d8f65b88db8d08ab12a9fbfb087"
+    },
+    {
+      "path": "samples/Tambourine/07.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bab6064dafdac1e2f199a1ad29253763f644f92a",
+      "size": 68048,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/bab6064dafdac1e2f199a1ad29253763f644f92a"
+    },
+    {
+      "path": "samples/Tambourine/08.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c4325579039623c893785683b9290375001a1e4",
+      "size": 67260,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/2c4325579039623c893785683b9290375001a1e4"
+    },
+    {
+      "path": "samples/Tambourine/09.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69697a89807ce55574e7f016b991905408cef48a",
+      "size": 78607,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/69697a89807ce55574e7f016b991905408cef48a"
+    },
+    {
+      "path": "samples/Tambourine/10.flac",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62fef6fc6868aa0bb794eaefb32b27f29bcd83ba",
+      "size": 67982,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/62fef6fc6868aa0bb794eaefb32b27f29bcd83ba"
+    },
+    {
+      "path": "samples/Tambourine/fast_03.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a158f51ddf954359a04969f785ad8409dd55bec",
+      "size": 13721,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/6a158f51ddf954359a04969f785ad8409dd55bec"
+    },
+    {
+      "path": "samples/Tambourine/fast_04.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40f5e0e950feb18fbf6955949840ed276eeef7a1",
+      "size": 12146,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/40f5e0e950feb18fbf6955949840ed276eeef7a1"
+    },
+    {
+      "path": "samples/Tambourine/fast_05.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75769f6ef09d521c158764b8efea902f79a77b24",
+      "size": 12239,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/75769f6ef09d521c158764b8efea902f79a77b24"
+    },
+    {
+      "path": "samples/Tambourine/fast_06.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a3475b875a633bb92f74e7b3a3258bdfa5dbf7b",
+      "size": 13334,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/4a3475b875a633bb92f74e7b3a3258bdfa5dbf7b"
+    },
+    {
+      "path": "samples/Tambourine/fast_07.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7339e95de27978d293396cb71c9a6c39fc67e222",
+      "size": 13028,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/7339e95de27978d293396cb71c9a6c39fc67e222"
+    },
+    {
+      "path": "samples/Tambourine/fast_08.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "422d60acd1d36d061f0497b84863e67c9397c83c",
+      "size": 13472,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/422d60acd1d36d061f0497b84863e67c9397c83c"
+    },
+    {
+      "path": "samples/Tambourine/fast_09.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af839ef4345549d35182039876eda587637f7956",
+      "size": 13583,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/af839ef4345549d35182039876eda587637f7956"
+    },
+    {
+      "path": "samples/Tambourine/fast_10.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f07a843f980ebb923fcf84598cd2446bac5b3a",
+      "size": 11540,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/79f07a843f980ebb923fcf84598cd2446bac5b3a"
+    },
+    {
+      "path": "samples/Tambourine/fast_11.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cff2e1ec368404b18ed1dc796bc213a6992c5d74",
+      "size": 13637,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/cff2e1ec368404b18ed1dc796bc213a6992c5d74"
+    },
+    {
+      "path": "samples/Tambourine/fast_12.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3423a8cf32765af84bdc0ae9412cc976788eb668",
+      "size": 12440,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/3423a8cf32765af84bdc0ae9412cc976788eb668"
+    },
+    {
+      "path": "samples/Tambourine/fast_13.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb2e60e6589e8a6a339e6ac62abf8d0b993e8fd5",
+      "size": 12194,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/fb2e60e6589e8a6a339e6ac62abf8d0b993e8fd5"
+    },
+    {
+      "path": "samples/Tambourine/fast_14.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "092fe35596ba1e915b48072f0492bcad88161ac9",
+      "size": 13379,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/092fe35596ba1e915b48072f0492bcad88161ac9"
+    },
+    {
+      "path": "samples/Tambourine/fast_15.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b763cc2376186d34067369a5c988e0c7ec51774",
+      "size": 12470,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9b763cc2376186d34067369a5c988e0c7ec51774"
+    },
+    {
+      "path": "samples/Tambourine/fast_16.wav",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d53ebae8147e7d2392d80442d91b37196225879",
+      "size": 13760,
+      "url": "https://api.github.com/repos/freepats/world-percussion/git/blobs/9d53ebae8147e7d2392d80442d91b37196225879"
+    }
+  ],
+  "truncated": false
+}

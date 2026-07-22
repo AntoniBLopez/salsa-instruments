@@ -97,14 +97,23 @@ function shaker(dur = 0.09) {
   return out
 }
 
+/** Placeholder only — real güiro ridge scrapes: `pnpm fetch:guiro` */
 function guiro(dur = 0.18) {
   const n = Math.floor(SR * dur)
   const out = new Float32Array(n)
+  const ridges = dur > 0.12 ? 9 : 3
+  for (let r = 0; r < ridges; r++) {
+    const u = (r + 0.5) / ridges
+    const pos = Math.floor((0.02 + u * 0.85 * dur) * SR)
+    for (let i = 0; i < Math.floor(SR * 0.01); i++) {
+      if (pos + i >= n) break
+      const e = Math.exp(-i / (SR * 0.004))
+      out[pos + i] += e * (noise() * 0.5 + Math.sin(2 * Math.PI * 1400 * (i / SR)) * 0.2)
+    }
+  }
   for (let i = 0; i < n; i++) {
     const t = i / SR
-    const scrape = Math.sin(2 * Math.PI * 18 * t) * 0.5 + 0.5
-    const e = env(t, 0.01, 0.12) * scrape
-    out[i] = noise() * e * 0.4 + Math.sin(2 * Math.PI * 900 * t) * e * 0.08
+    out[i] *= env(t, 0.008, dur * 0.4)
   }
   return out
 }
@@ -132,6 +141,23 @@ function metronomeClick() {
   return woodClick(1800, 0.05)
 }
 
+/** Electric/salsa bass pluck: fundamental + soft harmonic, quick attack */
+function bassNote(freq, dur = 0.45) {
+  const n = Math.floor(SR * dur)
+  const out = new Float32Array(n)
+  for (let i = 0; i < n; i++) {
+    const t = i / SR
+    const e = Math.exp(-t * 4.2) * (t < 0.008 ? t / 0.008 : 1)
+    const body =
+      Math.sin(2 * Math.PI * freq * t) * 0.7 +
+      Math.sin(2 * Math.PI * freq * 2 * t) * 0.18 * Math.exp(-t * 8) +
+      Math.sin(2 * Math.PI * freq * 3 * t) * 0.06 * Math.exp(-t * 14)
+    const click = noise() * Math.exp(-t * 90) * 0.08
+    out[i] = (body + click) * e * 0.85
+  }
+  return out
+}
+
 // Synthetic complements (FreePats covers clave/conga/bongo/maracas via fetch:freepats)
 const files = {
   'clave-open.wav': clave(0.14),
@@ -145,12 +171,8 @@ const files = {
   'timbale-open.wav': timbale(260, 0.22),
   'timbale-mute.wav': timbale(300, 0.1),
   'timbale-slap.wav': timbale(480, 0.08),
-  'maracas-open.wav': shaker(0.1),
-  'maracas-mute.wav': shaker(0.06),
-  'guiro-open.wav': guiro(0.2),
-  'guiro-mute.wav': guiro(0.1),
-  'campana-open.wav': campana(920, 0.5),
-  'campana-mute.wav': campana(720, 0.25),
+  // Maracas / güiro / campana: fetch:maracas / fetch:guiro / fetch:campana
+  // Bajo intentionally omitted — use electric bass hits: `pnpm fetch:bajo`
   'click.wav': metronomeClick(),
 }
 

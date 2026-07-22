@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 .tmp-freepats
+.tmp-maracas
+.tmp-bajo
 package-lock.json
 yarn.lock
 

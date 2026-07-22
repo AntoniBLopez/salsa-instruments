@@ -1,10 +1,15 @@
 import { create } from 'zustand'
-import type { ClaveDirection } from '../data/instruments'
+import {
+  defaultSelectedRhythms,
+  type ClaveDirection,
+} from '../data/instruments'
 
 export type SessionState = {
   activeIds: string[]
   mutedIds: string[]
   soloId: string | null
+  /** instrumentId → rhythmId */
+  selectedRhythms: Record<string, string>
   bpm: number
   swing: number
   claveDirection: ClaveDirection
@@ -25,6 +30,8 @@ export type SessionState = {
   setSwing: (swing: number) => void
   setClaveDirection: (dir: ClaveDirection) => void
   setPracticeMode: (on: boolean) => void
+  setRhythm: (instrumentId: string, rhythmId: string) => void
+  setActive: (id: string, on: boolean) => void
   toggleActive: (id: string) => void
   toggleMute: (id: string) => void
   toggleSolo: (id: string) => void
@@ -39,15 +46,16 @@ export const useSessionStore = create<SessionState>((set, get) => ({
   activeIds: ['clave'],
   mutedIds: [],
   soloId: null,
+  selectedRhythms: defaultSelectedRhythms(),
   bpm: 180,
-  swing: 0.08,
-  claveDirection: '3-2',
+  swing: 0,
+  claveDirection: '2-3',
   isPlaying: false,
   beat: 1,
   practiceMode: false,
   lastTriggeredAt: {},
   ready: false,
-  loading: true,
+  loading: false,
   error: null,
 
   setReady: (ready) => set({ ready }),
@@ -60,16 +68,37 @@ export const useSessionStore = create<SessionState>((set, get) => ({
   setClaveDirection: (claveDirection) => set({ claveDirection }),
   setPracticeMode: (practiceMode) => set({ practiceMode }),
 
-  toggleActive: (id) => {
+  setRhythm: (instrumentId, rhythmId) => {
+    const { selectedRhythms, activeIds } = get()
+    set({
+      selectedRhythms: { ...selectedRhythms, [instrumentId]: rhythmId },
+      // Choosing a rhythm puts the instrument in the layer
+      activeIds: activeIds.includes(instrumentId)
+        ? activeIds
+        : [...activeIds, instrumentId],
+      // Leaving Practice so layered instruments can be heard
+      practiceMode: false,
+    })
+  },
+
+  setActive: (id, on) => {
     const { activeIds, soloId } = get()
-    if (activeIds.includes(id)) {
+    if (on) {
       set({
-        activeIds: activeIds.filter((x) => x !== id),
-        soloId: soloId === id ? null : soloId,
+        activeIds: activeIds.includes(id) ? activeIds : [...activeIds, id],
+        practiceMode: false,
       })
-    } else {
-      set({ activeIds: [...activeIds, id] })
+      return
     }
+    set({
+      activeIds: activeIds.filter((x) => x !== id),
+      soloId: soloId === id ? null : soloId,
+    })
+  },
+
+  toggleActive: (id) => {
+    const { activeIds } = get()
+    get().setActive(id, !activeIds.includes(id))
   },
 
   toggleMute: (id) => {

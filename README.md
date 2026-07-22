@@ -1,6 +1,6 @@
 # Salsa Instruments
 
-App web para apilar percusión de **salsa** y **mambo**: clave, congas, bongós, timbales, maracas, güiro y campana. Controla BPM, swing, tap tempo, mute/solo y modo Practice (solo clave + conteo).
+App web para apilar percusión y bajo de **salsa** y **mambo**: clave, congas, bongós, timbales, maracas, güiro, campana y bajo (tumbao anticipado). Controla BPM, swing, tap tempo, mute/solo y modo Practice (solo clave + conteo).
 
 ## Cómo correr
 
@@ -25,14 +25,22 @@ No hace falta ningún servicio de pago. El flujo es:
 
 | Instrumento | Fuente |
 |---|---|
-| Clave, congas, bongós, maracas | [FreePats World Percussion](https://github.com/freepats/world-percussion) (CC0) |
-| Timbales, güiro (open), campana, click | Síntesis propia (`pnpm generate:samples`) |
+| Clave, congas, bongós | [FreePats World Percussion](https://github.com/freepats/world-percussion) (CC0) |
+| Maracas | [FreePats EggShaker](https://github.com/freepats/world-percussion) + bead synth (CC0) |
+| Bajo | [Free Wave Samples](https://freewavesamples.com/) Roland JV-2080 Pick Bass (royalty-free) |
+| Güiro | Ridge-scrape synth (`pnpm fetch:guiro`) |
+| Campana | [VCSL Cowbells](https://github.com/sgossner/VCSL) (CC0) |
+| Timbales, click | Síntesis propia (`pnpm generate:samples`) |
 
 Para regenerar:
 
 ```bash
 pnpm generate:samples   # base sintética
-pnpm fetch:freepats     # sobrescribe con FreePats CC0 (requiere ffmpeg-static)
+pnpm fetch:freepats     # clave/congas/bongós CC0
+pnpm fetch:maracas      # maracas (EggShaker beads CC0)
+pnpm fetch:guiro        # güiro (ridge scrapes)
+pnpm fetch:campana      # campana metálica (TING / TAK)
+pnpm fetch:bajo         # bajo eléctrico (Free Wave Samples)
 ```
 
 Otras fuentes CC0 compatibles: [Freesound](https://freesound.org/) (filtro CC0), [VCSL Percussion](https://huggingface.co/datasets/schismaudio/vcsl-percussion).

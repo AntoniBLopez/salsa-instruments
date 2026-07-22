@@ -28,7 +28,11 @@ export function TransportBar() {
           <p className={`${styles.status} ${styles.error}`}>{error}</p>
         ) : (
           <p className={styles.status}>
-            {loading ? 'Cargando sonidos…' : ready ? 'Listo para tocar' : 'Preparando…'}
+            {loading
+              ? 'Cargando sonidos…'
+              : ready
+                ? 'Listo para tocar'
+                : 'Pulsa Play para empezar'}
           </p>
         )}
       </div>
@@ -38,16 +42,23 @@ export function TransportBar() {
           type="button"
           className={`${styles.playBtn} ${isPlaying ? styles.playing : ''}`}
           onClick={() => void toggle()}
-          disabled={loading && !ready}
+          disabled={loading}
         >
-          {isPlaying ? 'Pausa' : 'Play'}
+          {isPlaying ? 'Stop' : 'Play'}
         </button>
 
-        <div className={styles.beats} aria-label="Conteo">
-          {[1, 2, 3, 4].map((n) => (
+        <div className={styles.beats} aria-label="Conteo de 8 tiempos">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
             <span
               key={n}
-              className={`${styles.beat} ${isPlaying && beat === n ? styles.active : ''}`}
+              className={[
+                styles.beat,
+                n === 5 ? styles.barBreak : '',
+                isPlaying && beat === n ? styles.active : '',
+                !isPlaying && n === 1 ? styles.ready : '',
+              ]
+                .filter(Boolean)
+                .join(' ')}
             >
               {n}
             </span>
@@ -88,24 +99,27 @@ export function TransportBar() {
           </button>
           <button
             type="button"
-            className={`${styles.chip} ${claveDirection === '3-2' ? styles.on : ''}`}
-            onClick={() => setClaveDirection('3-2')}
-          >
-            Clave 3-2
-          </button>
-          <button
-            type="button"
             className={`${styles.chip} ${claveDirection === '2-3' ? styles.on : ''}`}
             onClick={() => setClaveDirection('2-3')}
+            title="Golpes en 2, 3, 5, 6½, 8"
           >
             Clave 2-3
           </button>
           <button
             type="button"
+            className={`${styles.chip} ${claveDirection === '3-2' ? styles.on : ''}`}
+            onClick={() => setClaveDirection('3-2')}
+            title="Golpes en 1, 2½, 4, 6, 7"
+          >
+            Clave 3-2
+          </button>
+          <button
+            type="button"
             className={`${styles.chip} ${practiceMode ? styles.on : ''}`}
             onClick={() => setPracticeMode(!practiceMode)}
+            title="Solo clave + conteo. Se apaga al añadir otros instrumentos."
           >
-            Practice
+            {practiceMode ? 'Practice ON' : 'Practice'}
           </button>
         </div>
       </div>

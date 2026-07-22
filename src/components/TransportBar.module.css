@@ -76,18 +76,19 @@
 
 .beats {
   display: flex;
-  gap: 0.45rem;
+  flex-wrap: wrap;
+  gap: 0.35rem;
   align-items: center;
 }
 
 .beat {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.9rem;
+  height: 1.9rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--muted);
   background: color-mix(in srgb, var(--cream) 8%, transparent);
@@ -99,12 +100,22 @@
     box-shadow 120ms ease;
 }
 
+.beat.barBreak {
+  margin-left: 0.45rem;
+}
+
 .beat.active {
   color: var(--ink);
   background: var(--amber);
   border-color: var(--amber);
   transform: scale(1.08);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--amber) 25%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber) 25%, transparent);
+}
+
+/* Stopped: show count rests on 1 */
+.beat.ready {
+  border-color: color-mix(in srgb, var(--amber) 45%, transparent);
+  color: var(--amber);
 }
 
 .group {

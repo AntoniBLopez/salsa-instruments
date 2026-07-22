@@ -25,9 +25,8 @@ const downloads = [
   [`${base}/Bongos/1_01.flac`, 'bongo-open.wav'],
   [`${base}/Bongos/1_02.flac`, 'bongo-mute.wav'],
   [`${base}/Bongos/1_03.flac`, 'bongo-slap.wav'],
-  [`${base}/Maracas/01_01.flac`, 'maracas-open.wav'],
-  [`${base}/Maracas/01_02.flac`, 'maracas-mute.wav'],
-  [`${base}/EggShaker/fast_01.flac`, 'guiro-mute.wav'],
+  // Maracas: `pnpm fetch:maracas` (EggShaker beads — FreePats Maracas/ sound scrape-like)
+  // Güiro mute: keep synthetic scrape from `pnpm generate:samples`
 ]
 
 for (const [url, outName] of downloads) {
