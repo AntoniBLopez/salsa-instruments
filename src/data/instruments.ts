@@ -198,12 +198,20 @@ const CONGA_URIBE = fromEighths([
 ])
 
 /**
- * Tumbao estándar (el más habitual en salsa dura):
- * “cu-cum-pa” cada 2 tiempos — O O S _ × 4
+ * Tumbao fast: “cu-cum-pa” cada 2 tiempos — O O S _ × 4
  */
-const CONGA_ESTANDAR = fromEighths([
+const CONGA_FAST = fromEighths([
   O, O, S, _, O, O, S, _,
   O, O, S, _, O, O, S, _,
+])
+
+/**
+ * Tumbao common: cu-cum en 1/1.5, pa en el 3 — un ciclo por compás
+ * Corcheas: O O _ _ S _ _ _
+ */
+const CONGA_COMMON = fromEighths([
+  O, O, _, _, S, _, _, _,
+  O, O, _, _, S, _, _, _,
 ])
 
 const CONGA_TUMBAO_GROUP = 'tumbao'
@@ -883,11 +891,19 @@ export const INSTRUMENTS: InstrumentConfig[] = [
     fx: { reverbWet: 0.16, filterFreq: 4500 },
     rhythms: [
       congaTumbaoRhythm(
-        'tumbao-estandar',
-        'Estándar',
+        'tumbao-common',
+        'Common',
         'beginner',
-        'El más habitual: cu-cum-pa cada 2 tiempos (empieza en el 1)',
-        CONGA_ESTANDAR,
+        'Cu-cum en 1 / 1.5, pa en el 3 — un ciclo por compás, con aire',
+        CONGA_COMMON,
+        'cu-cum · pa · · · ·',
+      ),
+      congaTumbaoRhythm(
+        'tumbao-fast',
+        'Fast',
+        'beginner',
+        'Cu-cum-pa cada 2 tiempos — ciclo corto y machacón',
+        CONGA_FAST,
         'cu-cum-pa cu-cum-pa',
       ),
       congaTumbaoRhythm(
@@ -1250,8 +1266,8 @@ export const SON_DEFAULT_ID = 'son-32'
 export const RUMBA_DEFAULT_ID = 'rumba-32'
 /** Default bajo — tumbao anticipado de manual */
 export const BAJO_DEFAULT_ID = 'anticipado'
-/** Default conga — tumbao estándar (cu-cum-pa) */
-export const CONGA_DEFAULT_ID = 'tumbao-estandar'
+/** Default conga — tumbao common (cu-cum · pa) */
+export const CONGA_DEFAULT_ID = 'tumbao-common'
 
 export function defaultRhythmId(instrument: InstrumentConfig): string {
   if (instrument.id === 'campana') {
@@ -1332,6 +1348,9 @@ export function getRhythm(
     id = BAJO_DEFAULT_ID
   }
   if (instrument.id === 'conga' && rhythmId === 'tumbao') id = 'tumbao-uribe'
+  if (instrument.id === 'conga' && rhythmId === 'tumbao-estandar') {
+    id = 'tumbao-fast'
+  }
   if (
     instrument.id === 'conga' &&
     (rhythmId === 'basico' || rhythmId === 'basic' || rhythmId === 'cucum')
