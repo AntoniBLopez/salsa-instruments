@@ -61,6 +61,12 @@ Las ilustraciones en `public/images/` son SVG originales de este proyecto.
 | Capa (switch) | Añade o quita el instrumento del groove |
 | Solo | Deja sonar solo ese instrumento |
 
+## Offline / PWA
+
+Tras la **primera visita online**, el service worker cachea JS, CSS, fuentes locales, iconos y todos los samples (~1.4 MB). Después puedes usarla **sin red**.
+
+En el móvil: “Añadir a pantalla de inicio” / Install. En desktop Chrome: icono de instalar en la barra de direcciones.
+
 ## Stack
 
-Vite · React · TypeScript · Tone.js · Zustand
+Vite · React · TypeScript · Tone.js · Zustand · vite-plugin-pwa
