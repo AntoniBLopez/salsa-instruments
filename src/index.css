@@ -1,0 +1,46 @@
+:root {
+  --amber: #f0b429;
+  --coral: #e85d4c;
+  --teal: #2a9d8f;
+  --cream: #f7f0e6;
+  --ink: #14110f;
+  --muted: color-mix(in srgb, var(--cream) 62%, #8a8074);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--cream);
+  background: #121820;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
