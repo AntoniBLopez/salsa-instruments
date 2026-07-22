@@ -58,8 +58,7 @@ Las ilustraciones en `public/images/` son SVG originales de este proyecto.
 | Clave → Son / Rumba | En la tarjeta Clave: elige 2-3 o 3-2 (mueve también cáscara, mambo…) |
 | Negras | Añade el click de las negras (1–8) encima del groove |
 | Mute all | Silencia todos los instrumentos (Negras sigue si está ON) |
-| Añadir | Capa el instrumento en el groove |
-| Mute | Silencia sin quitarlo de la capa |
+| Capa (switch) | Añade o quita el instrumento del groove |
 | Solo | Deja sonar solo ese instrumento |
 
 ## Stack

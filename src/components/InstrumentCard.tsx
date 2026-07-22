@@ -22,7 +22,6 @@ type Props = {
 export function InstrumentCard({ instrument }: Props) {
   const { id, name, image, rhythms } = instrument
   const active = useSessionStore((s) => s.activeIds.includes(id))
-  const muted = useSessionStore((s) => s.mutedIds.includes(id))
   const solo = useSessionStore((s) => s.soloId === id)
   const muteAll = useSessionStore((s) => s.muteAll)
   const rhythmId = useSessionStore(
@@ -33,7 +32,6 @@ export function InstrumentCard({ instrument }: Props) {
   const isPlaying = useSessionStore((s) => s.isPlaying)
   const setRhythm = useSessionStore((s) => s.setRhythm)
   const setActive = useSessionStore((s) => s.setActive)
-  const toggleMute = useSessionStore((s) => s.toggleMute)
   const toggleSolo = useSessionStore((s) => s.toggleSolo)
   const claveDirection = useSessionStore((s) => s.claveDirection)
 
@@ -119,7 +117,7 @@ export function InstrumentCard({ instrument }: Props) {
         styles.card,
         active ? styles.active : '',
         solo ? styles.solo : '',
-        muted || muteAll ? styles.dimmed : '',
+        muteAll ? styles.dimmed : '',
         pulse && active && !muteAll ? styles.pulse : '',
       ]
         .filter(Boolean)
@@ -139,14 +137,6 @@ export function InstrumentCard({ instrument }: Props) {
             onClick={() => setActive(id, !active)}
           >
             <span className={styles.switchKnob} />
-          </button>
-          <button
-            type="button"
-            className={`${styles.btn} ${muted ? styles.on : ''}`}
-            onClick={() => toggleMute(id)}
-            disabled={!active}
-          >
-            Mute
           </button>
           <button
             type="button"
